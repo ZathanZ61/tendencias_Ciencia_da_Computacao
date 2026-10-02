@@ -1,186 +1,179 @@
-# Atividade: Low Code / No Code - Identificando Lacunas em Aplicações Existentes
+# Atividade: Low Code / No Code
+
+## Título
+Análise de lacunas em aplicações populares e propostas de soluções com ferramentas low code/no code
 
 ## Objetivo
-Identificar **problemas e lacunas** em aplicações populares e investigar como ferramentas low code/no code podem **preencher essas falhas** de forma rápida e acessível.
+Investigar problemas reais em aplicativos e plataformas amplamente utilizados e refletir sobre como ferramentas low code e no code podem preencher essas lacunas de forma prática, acessível e rápida.
 
 ## Contexto
-Muitos aplicativos amplamente utilizados não resolvem **todas as necessidades** dos usuários. Exemplos incluem:
-- Falta de rastreamento de produtos e descarte
-- Problemas com transações e integração bancária
-- Limitações em funcionalidades específicas do domínio
-- Ausência de automações necessárias
+Muitas aplicações do mercado resolvem grande parte das necessidades dos usuários, mas ainda apresentam limitações importantes. Esses problemas podem estar relacionados a:
 
-## Aplicações a Estudar
+- ausência de rastreio de informações importantes;
+- dificuldades de integração entre serviços;
+- falta de automação em processos rotineiros;
+- baixa personalização de funcionalidades;
+- ausência de recursos para gestão de dados e relatórios;
+- limitações nas experiências do usuário em contextos específicos.
 
-### 1. **Waze**
-**Problema identificado:** Falta de rastreamento de produtos/entregas e dados sobre descarte ambiental.
-
-**Lacunas:**
-- Não monitora destino final de produtos transportados
-- Sem integração com políticas de reciclagem/sustentabilidade
-- Não fornece dados sobre impacto ambiental das rotas
-
-**Como low code/no code pode resolver:**
-- Criar um dashboard que integre Waze com dados de descarte
-- Automação para notificar usuários sobre pontos de coleta de reciclagem próximos
-- Rastreamento de emissões por rota
-
-**Ferramentas sugeridas:** Zapier, Make, Airtable, Power Apps
+Nesse cenário, ferramentas low code e no code tornam-se alternativas relevantes, pois permitem criar protótipos, dashboards, fluxos automatizados e sistemas simples sem a necessidade de desenvolvimento completo a partir do zero.
 
 ---
 
-### 2. **Transações Bancárias**
-**Problema identificado:** Alguns bancos têm limitações em processamento de transações e integração com terceiros.
+## Problemas e lacunas observadas
 
-**Lacunas:**
-- Transações lentas entre bancos diferentes
-- Falta de histórico detalhado de gastos por categoria
-- Sem automação de pagamentos recorrentes customizados
-- Integração limitada com outros serviços financeiros
+### 1. Waze
+O Waze é uma ferramenta muito útil para navegação e otimização de rotas, mas ainda apresenta lacunas em áreas como:
 
-**Como low code/no code pode resolver:**
-- Criar automações de pagamentos inteligentes (Zapier, Make)
-- Dashboard consolidado de múltiplas contas (Airtable, Retool)
-- Categorizador automático de despesas (Power Apps)
-- Alertas customizados por tipo de transação
+- ausência de rastreio de produtos e entregas;
+- falta de integração com dados de descarte e logística reversa;
+- ausência de visão mais ampla sobre impactos ambientais das rotas;
+- limitação na organização de informações relacionadas a mobilidade sustentável.
 
-**Ferramentas sugeridas:** Make, Zapier, Retool, Power Automate
+Esses pontos mostram que, apesar de eficiente na navegação, a plataforma ainda não atende totalmente necessidades mais amplas de gestão ambiental e logística.
 
----
+### 2. Aplicativos bancários e transações financeiras
+Sistemas bancários e plataformas financeiras também possuem limitações importantes, como:
 
-### 3. **Outros Aplicativos a Pesquisar**
-**Sua tarefa:** Pesquisar e documentar:
-- Spotify (recomendações limitadas, falta de compartilhamento de listas dinâmicas)
-- WhatsApp (sem integração automática com CRM)
-- Uber/99 (sem histórico consolidado de gastos com transporte)
-- Netflix (recomendações genéricas)
-- Bancos digitais (falta de consolidação de múltiplas contas)
+- dificuldade de integrar múltiplas contas em um único painel;
+- falta de organização detalhada de gastos por categoria;
+- problemas em alertas e controle financeiro personalizado;
+- ausência de automações para pagamentos recorrentes e rastreio de movimentações;
+- baixa flexibilidade para usuários que desejam maior controle sobre suas finanças.
 
----
+Essas limitações demonstram que, mesmo em soluções já consolidadas, há espaço para melhorias em termos de experiência, organização e automação.
 
-## Atividade Prática
+### 3. Pesquisa de outros aplicativos do mercado
+Além do Waze e dos serviços bancários, é possível observar lacunas em outras plataformas populares, como:
 
-### Fase 1: Pesquisa
-1. **Escolha um aplicativo** que você usa regularmente
-2. **Identifique problemas reais:**
-   - O que falta nele?
-   - O que seria útil adicionar?
-   - Que dados não são rastreados?
-   - Quais tarefas poderiam ser automatizadas?
-3. **Documente em um arquivo:**
-   - Nome do app
-   - Problemas identificados
-   - Impacto para o usuário
+- Spotify: recomendações mais genéricas, pouca personalização avançada de playlists e organização de preferências;
+- WhatsApp: falta de integração com fluxos de trabalho e ferramentas de gestão;
+- Uber e apps de mobilidade: ausência de relatórios mais completos sobre custos, padrões de uso e gestão de viagens;
+- Netflix: recomendações com pouca personalização em contextos específicos;
+- redes sociais: falta de ferramentas mais eficientes para organização de conteúdo e gestão de dados pessoais.
 
-### Fase 2: Pesquisa de Soluções Low Code/No Code
-1. Pesquise ferramentas que poderiam resolver o problema:
-   - Zapier (automações)
-   - Make (workflows complexos)
-   - Airtable (banco de dados visual)
-   - Bubble/Glide (aplicativos)
-   - Power Apps (soluções corporativas)
-   - Retool (dashboards internos)
-
-2. **Avalie:**
-   - Custo
-   - Facilidade de integração
-   - Capacidades técnicas
-   - Limitações
-
-### Fase 3: Prototipagem
-1. **Escolha uma ferramenta** e crie um protótipo simples
-2. **Documente o fluxo:**
-   - Inputs (dados que entram)
-   - Processos (o que acontece)
-   - Outputs (resultados)
-3. **Teste a solução** (se possível)
-
-### Fase 4: Documentação Final
-Seu relatório deve incluir:
-
-```
-## [Nome do Aplicativo]
-
-### Problemas Identificados
-- [ Problema 1 ]
-- [ Problema 2 ]
-- [ Problema 3 ]
-
-### Impacto
-Por que isso é importante? Quem é afetado?
-
-### Solução Proposta (Low Code/No Code)
-- Ferramenta escolhida: [ Zapier / Make / Airtable / ... ]
-- Como funciona: [ Descreva o fluxo ]
-- Benefícios: [ O que melhora ]
-- Limitações: [ O que ainda não resolve ]
-
-### Prototipo/Exemplo
-[ Print de tela, descrição ou link do protótipo ]
-
-### Conclusão
-A solução é viável? Por quê?
-```
+Esses exemplos ajudam a mostrar que uma boa solução digital nem sempre precisa ser complexa para gerar valor. Muitas vezes, o problema central está em falta de organização, automação ou integração.
 
 ---
 
-## Pesquisa de Mercado
+## O papel do low code e do no code
 
-Durante seus estudos, responda:
+As ferramentas low code e no code permitem criar soluções mais rápidas e acessíveis para resolver esses problemas. Elas são úteis em cenários em que é necessário:
 
-1. **Quais ferramentas low code/no code existem no mercado?**
-2. **Como elas se comparam em relação a:**
-   - Preço
-   - Facilidade de uso
-   - Capacidades de integração
-   - Suporte
+- fabricar protótipos de forma ágil;
+- automatizar tarefas repetitivas;
+- criar dashboards e relatórios;
+- conectar sistemas diferentes;
+- transformar dados em informações visualmente claras;
+- testar ideias com custo menor e em menos tempo.
 
-3. **Quais problemas específicos cada uma resolve?**
-
-4. **Existem soluções já prontas para os problemas estudados?**
+Essas ferramentas não substituem completamente o desenvolvimento tradicional, mas ajudam a resolver problemas pontuais de forma eficiente e com menor dependência de programação avançada.
 
 ---
 
-## Referências de Ferramentas
+## Ferramentas relevantes no mercado
 
 ### Automação
-- [Zapier](https://zapier.com)
-- [Make](https://make.com)
-- [Power Automate](https://powerautomate.microsoft.com)
-- [IFTTT](https://ifttt.com)
+- Zapier
+- Make
+- Power Automate
+- IFTTT
 
-### Banco de Dados / Planilhas
-- [Airtable](https://airtable.com)
-- [Notion](https://notion.so)
-- [Google Sheets + Apps Script](https://sheets.google.com)
+### Organização e banco de dados
+- Airtable
+- Notion
+- Google Sheets
 
-### Aplicativos
-- [Bubble](https://bubble.io)
-- [Glide](https://glideapps.com)
-- [FlutterFlow](https://flutterflow.io)
+### Criação de aplicativos
+- Bubble
+- Glide
+- FlutterFlow
 
-### Dashboards / BI
-- [Retool](https://retool.com)
-- [Power Apps](https://powerapps.microsoft.com)
-- [Looker Studio](https://lookerstudio.google.com)
+### Dashboards e gestão visual
+- Retool
+- Power Apps
+- Looker Studio
+
+Essas ferramentas podem ser usadas para criar desde fluxos simples de automação até dashboards completos e protótipos de aplicativos.
 
 ---
 
-## Perguntas para Reflexão
+## Proposta de solução
+A partir da análise das lacunas percebidas, uma solução low code/no code pode ser utilizada para:
 
-- Como as lacunas em aplicativos afetam a experiência do usuário?
-- Low code/no code pode substituir uma solução desenvolvida do zero?
-- Quando é melhor usar low code vs contratar um desenvolvedor?
-- Como a IA pode melhorar essas soluções no futuro?
-- Qual é o custo-benefício real?
+1. mapear o problema real;
+2. definir quais dados são relevantes;
+3. escolher a ferramenta apropriada;
+4. criar um protótipo funcional;
+5. validar se a solução atende ao objetivo.
+
+Exemplos de aplicação:
+
+- criar um dashboard de gastos para centralizar transações bancárias;
+- automatizar alertas de pagamento e controle financeiro;
+- criar uma plataforma simples para rastrear descarte e logística reversa;
+- desenvolver um painel para comparar rotas, custos e impactos ambientais;
+- montar um sistema de integração entre diferentes serviços digitais.
+
+---
+
+## Metodologia da atividade
+
+### Etapa 1: Identificação do problema
+Escolher uma aplicação ou plataforma que o aluno conheça e analisar quais itens deixam a desejar. Isso pode incluir:
+
+- falta de rastreio;
+- baixa organização;
+- ausência de automação;
+- dificuldades de uso;
+- pouca integração entre ferramentas.
+
+### Etapa 2: Pesquisa de mercado
+Investigar quais soluções low code/no code podem resolver ou minimizar esse problema. A pesquisa deve considerar:
+
+- custo;
+- facilidade de uso;
+- integração com outros sistemas;
+- segurança;
+- escalabilidade;
+- limitação da ferramenta.
+
+### Etapa 3: Prototipagem
+Criar uma solução simples utilizando uma ferramenta visual. O protótipo pode ser:
+
+- um dashboard;
+- um fluxo automatizado;
+- uma base de dados estruturada;
+- um aplicativo simples de gestão.
+
+### Etapa 4: Documentação e apresentação
+O aluno deve registrar:
+
+- problema identificado;
+- ferramenta escolhida;
+- descrição da solução;
+- benefícios esperados;
+- limitações da solução;
+- conclusão final.
+
+---
+
+## Perguntas para reflexão
+
+- Quais problemas reais você consegue identificar em aplicativos que usa no cotidiano?
+- Por que uma solução low code/no code pode ser útil em situações de baixa complexidade?
+- Quando essa abordagem deixa de ser suficiente e é necessário um desenvolvimento tradicional?
+- Como a automação pode melhorar a experiência do usuário?
+- Em quais cenários a organização de dados se torna mais importante do que a funcionalidade em si?
 
 ---
 
 ## Conclusão
+A análise de lacunas em aplicações existentes mostra que nem sempre o problema está na ausência de tecnologia, mas sim na ausência de organização, personalização, automação e integração. Nesse contexto, as ferramentas low code e no code possuem grande potencial para tornar ideias e soluções acessíveis, rápidas e práticas.
 
-Este estudo busca demonstrar que **ferramentas low code/no code não apenas criam novas soluções**, mas também **complementam e melhoram** aplicativos existentes, tornando possível inovar sem necessidade de programação complexa.
+Essas ferramentas são especialmente relevantes para quem deseja criar soluções simples, validar hipóteses, automatizar processos e responder a problemas reais com menor custo e menor tempo de desenvolvimento. Portanto, além de serem instrumentos técnicos, também representam uma forma de pensar criativamente sobre inovação digital.
 
 ---
 
-## Nota
-Documente suas descobertas e compartilhe com a turma. Este é um exercício de **análise crítica** do mercado de tecnologia.
+## Observação final
+Este material pode ser usado como base para apresentação, relatório ou atividade prática em sala de aula. O importante é manter o foco em análise crítica, identificação de problemas reais e solução viável com ferramentas de baixo código ou sem código.
