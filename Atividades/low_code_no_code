@@ -1,1 +1,80 @@
+# Atividade: Low Code / No Code
 
+## Objetivo
+Explorar como ferramentas de baixo código e sem código permitem criar soluções digitais de forma rápida, com pouca ou nenhuma programação, além de entender seus benefícios, limitações e aplicações práticas.
+
+## Introdução
+As plataformas low code e no code têm crescido muito com o uso de inteligência artificial e automações. Elas permitem que pessoas com pouco conhecimento técnico criem aplicativos, fluxos de trabalho, dashboards, chatbots e automações em menos tempo.
+
+Essas ferramentas são úteis para:
+- prototipar ideias rapidamente;
+- automatizar tarefas repetitivas;
+- criar soluções para pequenos negócios e projetos acadêmicos;
+- permitir que mais pessoas participem do desenvolvimento digital.
+
+## Diferença entre Low Code e No Code
+
+### Low Code
+- Requer algum conhecimento técnico.
+- Permite maior personalização.
+- Normalmente oferece lógica visual e scripts opcionais.
+- Exemplo: Power Apps, Retool, OutSystems, AppSheet.
+
+### No Code
+- Foca em usuários sem programação.
+- Usa interfaces visuais e blocos de configuração.
+- Ideal para automações e criação rápida de soluções.
+- Exemplo: Zapier, Airtable, Glide, Bubble, Make.
+
+## Exemplos de uso
+- Automação de envio de e-mails e notificações;
+- Criação de formulários e dashboards;
+- Desenvolvimento de chatbots para atendimento;
+- Construção de aplicativos internos para empresas;
+- Criação de sites e landing pages sem escrever código.
+
+## Vantagens
+- Agilidade na criação de soluções;
+- Menor custo de desenvolvimento;
+- Maior democratização da criação digital;
+- Excelente para protótipos e MVPs;
+- Facilita colaboração entre áreas de negócio e tecnologia.
+
+## Limitações
+- Dependência da plataforma escolhida;
+- Menor controle sobre customizações avançadas;
+- Possíveis custos com uso escalável;
+- Dificuldade em projetos muito complexos;
+- Riscos de vendor lock-in (dependência de um provedor).
+
+## Atividade prática sugerida
+1. Escolha uma ferramenta low code ou no code.
+2. Defina um problema real ou hipotético que ela possa resolver.
+3. Crie uma solução simples usando a ferramenta escolhida.
+4. Documente:
+   - objetivo;
+   - público-alvo;
+   - fluxo da solução;
+   - tecnologias/recursos usados;
+   - benefícios e limitações.
+5. Apresente a solução para a turma ou para o professor.
+
+## Perguntas para reflexão
+- Em quais situações o low code é mais útil do que a programação tradicional?
+- Quando o no code pode ser insuficiente?
+- Como a IA pode potencializar essas ferramentas?
+- A facilidade de uso pode reduzir a necessidade de conhecimento técnico?
+
+## Conclusão
+Low code e no code representam uma mudança importante no desenvolvimento de software, tornando a criação de soluções mais acessível e rápida. Elas não substituem totalmente a programação, mas ampliam o alcance da inovação digital para pessoas e organizações com diferentes níveis de conhecimento técnico.
+
+## Referências
+- Microsoft Power Apps
+- Airtable
+- Zapier
+- Bubble
+- Glide
+- Make
+
+## Observação
+Este material pode ser adaptado para apresentações, relatórios e atividades em sala de aula.
