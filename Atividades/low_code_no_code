@@ -1,80 +1,186 @@
-# Atividade: Low Code / No Code
+# Atividade: Low Code / No Code - Identificando Lacunas em Aplicações Existentes
 
 ## Objetivo
-Explorar como ferramentas de baixo código e sem código permitem criar soluções digitais de forma rápida, com pouca ou nenhuma programação, além de entender seus benefícios, limitações e aplicações práticas.
+Identificar **problemas e lacunas** em aplicações populares e investigar como ferramentas low code/no code podem **preencher essas falhas** de forma rápida e acessível.
 
-## Introdução
-As plataformas low code e no code têm crescido muito com o uso de inteligência artificial e automações. Elas permitem que pessoas com pouco conhecimento técnico criem aplicativos, fluxos de trabalho, dashboards, chatbots e automações em menos tempo.
+## Contexto
+Muitos aplicativos amplamente utilizados não resolvem **todas as necessidades** dos usuários. Exemplos incluem:
+- Falta de rastreamento de produtos e descarte
+- Problemas com transações e integração bancária
+- Limitações em funcionalidades específicas do domínio
+- Ausência de automações necessárias
 
-Essas ferramentas são úteis para:
-- prototipar ideias rapidamente;
-- automatizar tarefas repetitivas;
-- criar soluções para pequenos negócios e projetos acadêmicos;
-- permitir que mais pessoas participem do desenvolvimento digital.
+## Aplicações a Estudar
 
-## Diferença entre Low Code e No Code
+### 1. **Waze**
+**Problema identificado:** Falta de rastreamento de produtos/entregas e dados sobre descarte ambiental.
 
-### Low Code
-- Requer algum conhecimento técnico.
-- Permite maior personalização.
-- Normalmente oferece lógica visual e scripts opcionais.
-- Exemplo: Power Apps, Retool, OutSystems, AppSheet.
+**Lacunas:**
+- Não monitora destino final de produtos transportados
+- Sem integração com políticas de reciclagem/sustentabilidade
+- Não fornece dados sobre impacto ambiental das rotas
 
-### No Code
-- Foca em usuários sem programação.
-- Usa interfaces visuais e blocos de configuração.
-- Ideal para automações e criação rápida de soluções.
-- Exemplo: Zapier, Airtable, Glide, Bubble, Make.
+**Como low code/no code pode resolver:**
+- Criar um dashboard que integre Waze com dados de descarte
+- Automação para notificar usuários sobre pontos de coleta de reciclagem próximos
+- Rastreamento de emissões por rota
 
-## Exemplos de uso
-- Automação de envio de e-mails e notificações;
-- Criação de formulários e dashboards;
-- Desenvolvimento de chatbots para atendimento;
-- Construção de aplicativos internos para empresas;
-- Criação de sites e landing pages sem escrever código.
+**Ferramentas sugeridas:** Zapier, Make, Airtable, Power Apps
 
-## Vantagens
-- Agilidade na criação de soluções;
-- Menor custo de desenvolvimento;
-- Maior democratização da criação digital;
-- Excelente para protótipos e MVPs;
-- Facilita colaboração entre áreas de negócio e tecnologia.
+---
 
-## Limitações
-- Dependência da plataforma escolhida;
-- Menor controle sobre customizações avançadas;
-- Possíveis custos com uso escalável;
-- Dificuldade em projetos muito complexos;
-- Riscos de vendor lock-in (dependência de um provedor).
+### 2. **Transações Bancárias**
+**Problema identificado:** Alguns bancos têm limitações em processamento de transações e integração com terceiros.
 
-## Atividade prática sugerida
-1. Escolha uma ferramenta low code ou no code.
-2. Defina um problema real ou hipotético que ela possa resolver.
-3. Crie uma solução simples usando a ferramenta escolhida.
-4. Documente:
-   - objetivo;
-   - público-alvo;
-   - fluxo da solução;
-   - tecnologias/recursos usados;
-   - benefícios e limitações.
-5. Apresente a solução para a turma ou para o professor.
+**Lacunas:**
+- Transações lentas entre bancos diferentes
+- Falta de histórico detalhado de gastos por categoria
+- Sem automação de pagamentos recorrentes customizados
+- Integração limitada com outros serviços financeiros
 
-## Perguntas para reflexão
-- Em quais situações o low code é mais útil do que a programação tradicional?
-- Quando o no code pode ser insuficiente?
-- Como a IA pode potencializar essas ferramentas?
-- A facilidade de uso pode reduzir a necessidade de conhecimento técnico?
+**Como low code/no code pode resolver:**
+- Criar automações de pagamentos inteligentes (Zapier, Make)
+- Dashboard consolidado de múltiplas contas (Airtable, Retool)
+- Categorizador automático de despesas (Power Apps)
+- Alertas customizados por tipo de transação
+
+**Ferramentas sugeridas:** Make, Zapier, Retool, Power Automate
+
+---
+
+### 3. **Outros Aplicativos a Pesquisar**
+**Sua tarefa:** Pesquisar e documentar:
+- Spotify (recomendações limitadas, falta de compartilhamento de listas dinâmicas)
+- WhatsApp (sem integração automática com CRM)
+- Uber/99 (sem histórico consolidado de gastos com transporte)
+- Netflix (recomendações genéricas)
+- Bancos digitais (falta de consolidação de múltiplas contas)
+
+---
+
+## Atividade Prática
+
+### Fase 1: Pesquisa
+1. **Escolha um aplicativo** que você usa regularmente
+2. **Identifique problemas reais:**
+   - O que falta nele?
+   - O que seria útil adicionar?
+   - Que dados não são rastreados?
+   - Quais tarefas poderiam ser automatizadas?
+3. **Documente em um arquivo:**
+   - Nome do app
+   - Problemas identificados
+   - Impacto para o usuário
+
+### Fase 2: Pesquisa de Soluções Low Code/No Code
+1. Pesquise ferramentas que poderiam resolver o problema:
+   - Zapier (automações)
+   - Make (workflows complexos)
+   - Airtable (banco de dados visual)
+   - Bubble/Glide (aplicativos)
+   - Power Apps (soluções corporativas)
+   - Retool (dashboards internos)
+
+2. **Avalie:**
+   - Custo
+   - Facilidade de integração
+   - Capacidades técnicas
+   - Limitações
+
+### Fase 3: Prototipagem
+1. **Escolha uma ferramenta** e crie um protótipo simples
+2. **Documente o fluxo:**
+   - Inputs (dados que entram)
+   - Processos (o que acontece)
+   - Outputs (resultados)
+3. **Teste a solução** (se possível)
+
+### Fase 4: Documentação Final
+Seu relatório deve incluir:
+
+```
+## [Nome do Aplicativo]
+
+### Problemas Identificados
+- [ Problema 1 ]
+- [ Problema 2 ]
+- [ Problema 3 ]
+
+### Impacto
+Por que isso é importante? Quem é afetado?
+
+### Solução Proposta (Low Code/No Code)
+- Ferramenta escolhida: [ Zapier / Make / Airtable / ... ]
+- Como funciona: [ Descreva o fluxo ]
+- Benefícios: [ O que melhora ]
+- Limitações: [ O que ainda não resolve ]
+
+### Prototipo/Exemplo
+[ Print de tela, descrição ou link do protótipo ]
+
+### Conclusão
+A solução é viável? Por quê?
+```
+
+---
+
+## Pesquisa de Mercado
+
+Durante seus estudos, responda:
+
+1. **Quais ferramentas low code/no code existem no mercado?**
+2. **Como elas se comparam em relação a:**
+   - Preço
+   - Facilidade de uso
+   - Capacidades de integração
+   - Suporte
+
+3. **Quais problemas específicos cada uma resolve?**
+
+4. **Existem soluções já prontas para os problemas estudados?**
+
+---
+
+## Referências de Ferramentas
+
+### Automação
+- [Zapier](https://zapier.com)
+- [Make](https://make.com)
+- [Power Automate](https://powerautomate.microsoft.com)
+- [IFTTT](https://ifttt.com)
+
+### Banco de Dados / Planilhas
+- [Airtable](https://airtable.com)
+- [Notion](https://notion.so)
+- [Google Sheets + Apps Script](https://sheets.google.com)
+
+### Aplicativos
+- [Bubble](https://bubble.io)
+- [Glide](https://glideapps.com)
+- [FlutterFlow](https://flutterflow.io)
+
+### Dashboards / BI
+- [Retool](https://retool.com)
+- [Power Apps](https://powerapps.microsoft.com)
+- [Looker Studio](https://lookerstudio.google.com)
+
+---
+
+## Perguntas para Reflexão
+
+- Como as lacunas em aplicativos afetam a experiência do usuário?
+- Low code/no code pode substituir uma solução desenvolvida do zero?
+- Quando é melhor usar low code vs contratar um desenvolvedor?
+- Como a IA pode melhorar essas soluções no futuro?
+- Qual é o custo-benefício real?
+
+---
 
 ## Conclusão
-Low code e no code representam uma mudança importante no desenvolvimento de software, tornando a criação de soluções mais acessível e rápida. Elas não substituem totalmente a programação, mas ampliam o alcance da inovação digital para pessoas e organizações com diferentes níveis de conhecimento técnico.
 
-## Referências
-- Microsoft Power Apps
-- Airtable
-- Zapier
-- Bubble
-- Glide
-- Make
+Este estudo busca demonstrar que **ferramentas low code/no code não apenas criam novas soluções**, mas também **complementam e melhoram** aplicativos existentes, tornando possível inovar sem necessidade de programação complexa.
 
-## Observação
-Este material pode ser adaptado para apresentações, relatórios e atividades em sala de aula.
+---
+
+## Nota
+Documente suas descobertas e compartilhe com a turma. Este é um exercício de **análise crítica** do mercado de tecnologia.
