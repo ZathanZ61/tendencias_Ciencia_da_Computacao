@@ -1,4 +1,33 @@
-# tendencias_Ciencia_da_Computacao
+# Tendências em Ciência da Computação
+
+Repositório acadêmico da disciplina **Tendências em Ciência da Computação**, do curso de **Ciência da Computação**.
+
+Este repositório reúne atividades, estudos e projetos desenvolvidos ao longo da disciplina. As atividades já registradas foram preservadas; as unidades seguintes foram organizadas para deixar clara a sequência de desenvolvimento dos trabalhos.
+
+## Organização dos conteúdos
+
+| Unidade | Conteúdo | Acesso |
+|---|---|---|
+| Unidade I | Atividades e estudos já registrados neste repositório. | Conteúdo mantido abaixo. |
+| Unidade II | Atividades e estudos já registrados neste repositório. | Conteúdo mantido abaixo. |
+| Unidade III | Mini projeto Low Code / No Code / Vibecode: proposta inicial de triagem de chamados de suporte de TI. | [Acessar documentação da Unidade III](Unidade-III-Low-Code-No-Code/README.md) |
+| Unidade IV | Evolução colaborativa do projeto de triagem, com automações, IA, registro de chamados, notificações e chatbot. | [Acessar a demonstração do sistema](https://sistema-de-triagem-eosin.vercel.app/) |
+
+## Continuidade entre as Unidades III e IV
+
+A Unidade III iniciou a temática de **triagem de chamados de suporte de TI**, com a proposta de organizar solicitações e apoiar sua classificação por meio de automação e Inteligência Artificial.
+
+Na Unidade IV, o mesmo tema foi desenvolvido em uma versão mais completa, em colaboração com Douglas. A evolução ampliou o fluxo com formulário web, validação de dados, geração de protocolo, classificação assistida por IA, armazenamento em Google Sheets, notificações por Gmail e chatbot com Gemini para acompanhamento dos chamados.
+
+Assim, a Unidade III representa a proposta e o protótipo inicial, enquanto a Unidade IV registra a ampliação da solução. As funcionalidades da versão evoluída não devem ser confundidas com o escopo inicial.
+
+**Demonstração da versão evoluída:** https://sistema-de-triagem-eosin.vercel.app/
+
+**Observação sobre testes:** a documentação técnica consultada registrava aprovação do cenário de prioridade alta com dados simulados, enquanto outros cenários ainda constavam como pendentes naquele registro. Portanto, este repositório não declara que todos os testes foram aprovados.
+
+---
+
+## Atividades e estudos já registrados
 
 ### 1. Comparação Prática
 
