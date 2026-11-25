@@ -1,59 +1,37 @@
 # 04 — Testes, validação e segurança
 
-## Objetivo dos testes
+## Objetivo
 
-Verificar se o protótipo recebe dados corretamente, trata entradas inválidas, registra chamados, lida com falhas da IA e protege as informações durante o acompanhamento.
+Os testes do mini projeto devem verificar se o fluxo de triagem recebe informações adequadas, identifica entradas inválidas e apresenta um resultado coerente para análise inicial.
 
-## Validações descritas na documentação do projeto
+## Cenários recomendados para o protótipo inicial
 
-### Abertura de chamado
-
-| Campo | Regra documentada |
+| Cenário | Resultado esperado |
 |---|---|
-| Nome | Obrigatório; mínimo de 3 caracteres. |
-| E-mail | Obrigatório; formato válido; normalizado para minúsculas. |
-| Setor | Obrigatório; opções previstas: Financeiro, RH, Comercial, Operações ou Outro. |
-| Descrição | Obrigatória; mínimo de 20 caracteres após remover espaços das extremidades. |
+| Solicitação com todos os dados necessários | O registro é recebido e segue para a triagem. |
+| Campo obrigatório ausente | A entrada é sinalizada para correção. |
+| Descrição pouco clara | A solicitação é identificada como necessitando de mais informações. |
+| Classificação sugerida pela IA | A sugestão é apresentada para revisão humana. |
+| Serviço de IA indisponível | O fluxo trata a falha sem apresentar uma classificação como concluída. |
+| Dados com conteúdo inadequado ou inesperado | A entrada é validada e tratada de forma controlada. |
 
-### Acompanhamento
+**Importante:** os cenários acima são critérios de validação recomendados. Não representam, por si só, testes executados ou aprovados.
 
-| Campo | Regra documentada |
-|---|---|
-| Protocolo | Obrigatório; formato CH-AAAAMMDD-XXXX. |
-| E-mail | Obrigatório; deve corresponder ao e-mail registrado no chamado. |
-| Mensagem | Obrigatória; limite documentado de 1.000 caracteres. |
+## Cuidados de segurança
 
-A validação no navegador melhora a experiência, mas não é suficiente: o workflow também deve validar os dados recebidos.
+1. **Validação de dados:** conferir as informações recebidas antes de processá-las.
+2. **Revisão humana:** tratar a classificação da IA como sugestão, especialmente em situações urgentes.
+3. **Credenciais:** não publicar chaves de API, senhas ou tokens no código ou no GitHub.
+4. **Privacidade:** utilizar dados fictícios nas demonstrações acadêmicas.
+5. **Integrações:** prever falhas e evitar informar que uma operação foi concluída quando houver erro.
+6. **Acesso:** limitar o acesso às ferramentas e aos registros às pessoas autorizadas.
 
-## Cenários de teste
+## Testes na evolução da Unidade IV
 
-A tabela diferencia o resultado esperado do estado de execução registrado. Não transforme um resultado esperado em aprovação sem executar o teste.
+A documentação da versão ampliada descreve validações mais específicas para a abertura de chamados e para o chatbot, incluindo conferência de protocolo e e-mail, fallback da classificação por IA e tratamento de indisponibilidade do Gemini.
 
-| Cenário | Resultado esperado | Estado encontrado no registro consultado |
-|---|---|---|
-| Chamado com prioridade alta e dados simulados | Registrar o chamado e gerar alerta à equipe. | Registrado como aprovado no material do projeto. |
-| Dados obrigatórios ausentes ou inválidos | Rejeitar a entrada e informar erro. | Pendente no registro consultado. |
-| Falha na classificação por IA | Utilizar o fallback documentado e manter o tratamento controlado. | Pendente no registro consultado. |
-| Protocolo e e-mail corretos no chat | Consultar somente o chamado correspondente. | Pendente no registro consultado. |
-| Protocolo correto com e-mail diferente | Recusar a consulta sem revelar os dados. | Pendente no registro consultado. |
-| Mensagem nova do solicitante | Acrescentar informação ao registro para a equipe. | Pendente no registro consultado. |
-| Tentativa de pedir dados de outros chamados | Recusar a solicitação. | Pendente no registro consultado. |
-| Indisponibilidade do Gemini | Informar indisponibilidade sem alterar o chamado. | Pendente no registro consultado. |
-
-**Limitação do registro:** o README do projeto informa que, no material de desenvolvimento consultado, apenas o cenário de prioridade alta estava marcado como aprovado com dados simulados; os demais ainda estavam pendentes naquele registro. Isso não confirma o estado atual da aplicação.
-
-## Cuidados de segurança e privacidade
-
-1. **Validação no servidor:** não confiar somente nas verificações feitas pela página.
-2. **Proteção dos webhooks:** URLs públicas não são senhas. Implementar controles contra abuso, spam e requisições indevidas.
-3. **Credenciais:** armazenar chaves e tokens no gerenciador de credenciais da plataforma, nunca no HTML, JavaScript ou README.
-4. **Controle de acesso:** limitar o acesso à planilha às pessoas autorizadas.
-5. **Dados pessoais:** usar dados fictícios nas demonstrações e evitar coletar informações desnecessárias.
-6. **Verificação de identidade:** exigir protocolo e e-mail correspondente antes de apresentar informações do chamado.
-7. **Revisão humana:** não permitir que a classificação da IA substitua a avaliação da equipe em incidentes críticos.
-8. **Falhas de integração:** testar indisponibilidade de IA, planilha e e-mail e evitar apresentar uma operação como concluída quando o registro falhou.
-9. **Prompt injection:** limitar os dados encaminhados ao modelo e manter as operações sensíveis sob controle do workflow, não da resposta livre da IA.
+No material técnico consultado para a versão evoluída, apenas o cenário de prioridade alta com dados simulados estava registrado como aprovado; os demais cenários constavam como pendentes naquele registro. Isso não comprova o estado atual dos testes.
 
 ## Conclusão
 
-Testar uma aplicação com IA não significa apenas verificar se ela responde em um cenário ideal. É necessário testar entradas inválidas, falhas externas, tentativas de acesso indevido e resultados incorretos. A documentação recuperada permite identificar esses cuidados, mas a aprovação integral depende de novas execuções e evidências.
+A validação é parte essencial do desenvolvimento Low Code e do uso de IA. Um fluxo funcionar em uma demonstração não significa que todos os casos estejam cobertos. É necessário registrar os cenários executados, seus resultados e as correções realizadas.
