@@ -1,29 +1,55 @@
 # Tendências em Ciência da Computação
 
-Repositório acadêmico da disciplina **Tendências em Ciência da Computação**, do curso de **Ciência da Computação**.
+**Curso:** Ciência da Computação  
+**Disciplina:** Tendências em Ciência da Computação
 
-Este repositório reúne atividades, estudos e projetos desenvolvidos ao longo da disciplina. As atividades já registradas foram preservadas; as unidades seguintes foram organizadas para deixar clara a sequência de desenvolvimento dos trabalhos.
+## Apresentação da disciplina
 
-## Organização dos conteúdos
+A disciplina **Tendências em Ciência da Computação** aborda conceitos, ferramentas e práticas atuais relacionadas à Inteligência Artificial e às novas formas de desenvolvimento de software. O estudo combina fundamentos teóricos com atividades práticas, incentivando a análise crítica e a aplicação de tecnologias emergentes na resolução de problemas.
 
-| Unidade | Conteúdo | Acesso |
-|---|---|---|
-| Unidade I | Atividades e estudos já registrados neste repositório. | Conteúdo mantido abaixo. |
-| Unidade II | Atividades e estudos já registrados neste repositório. | Conteúdo mantido abaixo. |
-| Unidade III | Mini projeto Low Code / No Code / Vibecode: proposta inicial de triagem de chamados de suporte de TI. | [Acessar documentação da Unidade III](Unidade-III-Low-Code-No-Code/README.md) |
-| Unidade IV | Evolução colaborativa do projeto de triagem, com automações, IA, registro de chamados, notificações e chatbot. | [Acessar a demonstração do sistema](https://sistema-de-triagem-eosin.vercel.app/) |
+Ao longo da disciplina, são explorados modelos de Inteligência Artificial, ferramentas generativas, técnicas de elaboração de prompts e recursos que auxiliam o desenvolvimento de programas e a automação de tarefas. Também são discutidas abordagens de desenvolvimento visual, integração de serviços e criação de soluções com apoio de IA.
 
-## Continuidade entre as Unidades III e IV
+## Principais temas abordados
 
-A Unidade III iniciou a temática de **triagem de chamados de suporte de TI**, com a proposta de organizar solicitações e apoiar sua classificação por meio de automação e Inteligência Artificial.
+- **Fundamentos de Inteligência Artificial:** conceitos básicos, aplicações e modelos generativos.
+- **Modelos de linguagem (LLMs):** funcionamento geral, possibilidades e limitações de ferramentas como ChatGPT e Copilot.
+- **Engenharia de Prompt:** elaboração, estruturação e refinamento de instruções para obter respostas mais claras e adequadas.
+- **Programação assistida por IA:** uso de ferramentas inteligentes para apoiar a escrita, compreensão, correção e melhoria de código.
+- **Automação:** criação de scripts e fluxos para simplificar tarefas e integrar ferramentas.
+- **Desenvolvimento Low Code e No Code:** utilização de plataformas visuais para construir aplicações e automatizações.
+- **Vibecode e integração:** desenvolvimento apoiado por instruções em linguagem natural, com revisão e validação dos resultados.
+- **Agentes de Inteligência Artificial:** conceitos e criação de agentes capazes de executar tarefas ou interagir com usuários.
+- **Ética, privacidade e segurança:** análise de riscos, proteção de dados, vieses algorítmicos e responsabilidade no uso da IA.
 
-Na Unidade IV, o mesmo tema foi desenvolvido em uma versão mais completa, em colaboração com Douglas. A evolução ampliou o fluxo com formulário web, validação de dados, geração de protocolo, classificação assistida por IA, armazenamento em Google Sheets, notificações por Gmail e chatbot com Gemini para acompanhamento dos chamados.
+## Objetivos de aprendizagem
 
-Assim, a Unidade III representa a proposta e o protótipo inicial, enquanto a Unidade IV registra a ampliação da solução. As funcionalidades da versão evoluída não devem ser confundidas com o escopo inicial.
+A disciplina busca desenvolver a capacidade de compreender tecnologias atuais de Inteligência Artificial e reconhecer suas aplicações na Computação. Também procura estimular o uso consciente de ferramentas generativas, a construção de instruções eficazes, a aplicação de recursos de automação e o desenvolvimento de protótipos e soluções tecnológicas.
 
-**Demonstração da versão evoluída:** https://sistema-de-triagem-eosin.vercel.app/
+## Competências desenvolvidas
 
-**Observação sobre testes:** a documentação técnica consultada registrava aprovação do cenário de prioridade alta com dados simulados, enquanto outros cenários ainda constavam como pendentes naquele registro. Portanto, este repositório não declara que todos os testes foram aprovados.
+- Compreender conceitos e possibilidades da Inteligência Artificial.
+- Identificar aplicações de modelos generativos e modelos de linguagem.
+- Elaborar e aprimorar prompts de acordo com objetivos específicos.
+- Utilizar IA como apoio à programação, identificando a necessidade de revisar e testar o código produzido.
+- Construir soluções simples com ferramentas de automação e plataformas visuais.
+- Integrar recursos e serviços em aplicações práticas.
+- Avaliar criticamente resultados, limitações e riscos das tecnologias utilizadas.
+- Reconhecer a importância da privacidade, segurança, ética e responsabilidade no desenvolvimento de soluções com IA.
+- Comunicar ideias, processos e resultados de projetos tecnológicos.
+
+## Metodologia
+
+O aprendizado é desenvolvido por meio de aulas expositivas, demonstrações, exercícios práticos em laboratório, pesquisas, discussões, estudos de caso e atividades individuais ou em grupo. As ferramentas e tecnologias podem ser atualizadas conforme a evolução da área de Inteligência Artificial.
+
+As atividades práticas permitem experimentar diferentes recursos, comparar resultados, identificar limitações e aplicar os conhecimentos na construção de soluções. A participação humana permanece essencial para orientar, revisar e validar aquilo que é produzido com auxílio da IA.
+
+## Avaliação
+
+A avaliação contempla atividades práticas e teóricas, desenvolvimento e apresentação de projetos, além de avaliações destinadas a verificar a compreensão dos conceitos e a capacidade de aplicá-los. Também são considerados a análise crítica, a comunicação dos resultados e o uso responsável das tecnologias.
+
+## Organização do repositório
+
+Este repositório reúne os estudos, exercícios, atividades e projetos realizados na disciplina. Os conteúdos são organizados em pastas e documentos para facilitar a consulta e acompanhar o desenvolvimento acadêmico ao longo do semestre.
 
 ---
 
