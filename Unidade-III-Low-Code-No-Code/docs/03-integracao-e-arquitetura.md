@@ -2,83 +2,62 @@
 
 ## Visão geral
 
-O protótipo organiza o atendimento em dois fluxos principais: abertura de chamado e acompanhamento pelo chat.
+Na Unidade III, a proposta foi construir um mini projeto para organizar a triagem inicial de chamados de suporte de TI. O fluxo conceitual recebe uma solicitação, organiza os dados e utiliza automação e IA como apoio à classificação.
 
-## Fluxo A — Abertura do chamado
+## Fluxo conceitual inicial
 
-1. O solicitante preenche nome, e-mail, setor e descrição na página web.
-2. A interface realiza verificações iniciais dos campos.
-3. Os dados são enviados em JSON para um webhook do n8n.
-4. O workflow valida e normaliza os dados e gera um protocolo.
-5. Um modelo de IA sugere categoria, prioridade, resumo e orientação inicial.
-6. Se a classificação falhar ou não puder ser utilizada, o fluxo documentado prevê valores alternativos (fallback).
-7. O chamado é registrado no Google Sheets com status inicial.
-8. O Gmail envia uma confirmação; chamados classificados com prioridade alta também podem gerar alerta à equipe.
-9. O n8n retorna uma resposta para a página exibir a confirmação e o protocolo.
+1. O usuário informa os dados básicos da solicitação.
+2. A aplicação ou formulário recebe as informações.
+3. O fluxo de automação verifica os dados necessários.
+4. A IA pode apoiar a interpretação e a classificação inicial do chamado.
+5. As informações organizadas ficam disponíveis para análise e encaminhamento.
 
 ### Diagrama simplificado
 
 ~~~mermaid
 flowchart TD
-    A[Solicitante] --> B[Formulário web]
-    B --> C[Webhook n8n]
-    C --> D{Dados válidos?}
-    D -->|Não| E[Retorno de erro]
-    D -->|Sim| F[Normalização e protocolo]
-    F --> G[Classificação assistida por IA]
-    G --> H{Resposta utilizável?}
-    H -->|Sim| I[Categoria e prioridade sugeridas]
-    H -->|Não| J[Fallback]
-    I --> K[Google Sheets]
-    J --> K
-    K --> L[Confirmação Gmail]
-    K --> M{Prioridade alta?}
-    M -->|Sim| N[Alerta à equipe]
-    M -->|Não| O[Resposta à página]
-    N --> O
+    A[Usuário] --> B[Registro da solicitação]
+    B --> C[Validação das informações]
+    C --> D{Dados suficientes?}
+    D -->|Não| E[Solicitar correção]
+    D -->|Sim| F[Fluxo de automação]
+    F --> G[Análise assistida por IA]
+    G --> H[Triagem inicial do chamado]
+    H --> I[Encaminhamento para análise da equipe]
 ~~~
 
-## Fluxo B — Acompanhamento do chamado
+O diagrama representa a ideia e o escopo didático da etapa inicial. Não é uma exportação literal de um workflow nem deve ser interpretado como descrição de todas as funcionalidades da versão posterior.
 
-1. O solicitante informa o protocolo e o e-mail utilizado na abertura.
-2. O workflow procura o registro correspondente no Google Sheets.
-3. O acesso às informações depende da correspondência entre protocolo e e-mail.
-4. O Gemini recebe os dados do chamado já localizado e responde em linguagem natural.
-5. Quando o solicitante envia uma informação nova, o workflow pode acrescentá-la ao registro para avaliação da equipe.
+## Papel das abordagens
 
-### Diagrama simplificado
+- **Low Code:** permite montar visualmente etapas, conexões e condições.
+- **No Code:** possibilita configurar determinadas operações sem escrever código específico.
+- **Vibecode:** permite utilizar instruções em linguagem natural para apoiar a criação e o ajuste de componentes.
+- **Código tradicional:** pode ser utilizado para personalizar a interface e comportamentos que exigem maior controle.
 
-~~~mermaid
-flowchart TD
-    A[Solicitante] --> B[Chat na página]
-    B --> C[Webhook n8n]
-    C --> D[Validar protocolo e e-mail]
-    D --> E{Chamado localizado e conferido?}
-    E -->|Não| F[Recusar consulta]
-    E -->|Sim| G[Buscar dados do chamado]
-    G --> H[Gemini responde]
-    H --> I[Resposta ao solicitante]
-    H --> J{Informação nova?}
-    J -->|Sim| K[Registrar informação para equipe]
-    J -->|Não| I
-    K --> I
-~~~
+## Evolução na Unidade IV
 
-## Papel de cada abordagem
+Na etapa seguinte, o grupo manteve a temática e ampliou a arquitetura. A versão evoluída passou a documentar dois fluxos principais:
 
-- **No Code / Low Code:** o n8n permite montar visualmente etapas, conexões, condições e integrações. A quantidade de código necessária depende da personalização de cada nó.
-- **Vibecode:** o uso iterativo de IA pode apoiar a elaboração e o ajuste da interface, de trechos de lógica e de configurações. O resultado precisa ser revisado e testado.
-- **Código tradicional:** HTML, CSS e JavaScript implementam a página, o formulário e o chat.
+### Abertura de chamados
+- formulário web;
+- validação e geração de protocolo;
+- classificação assistida por IA;
+- registro em Google Sheets;
+- confirmação por Gmail e alerta para prioridade alta.
 
-A solução é híbrida. Não é correto afirmar que tudo foi desenvolvido sem código ou exclusivamente por IA.
+### Acompanhamento
+- chatbot com Gemini;
+- consulta por protocolo e e-mail;
+- recuperação das informações do chamado;
+- registro de informações adicionais enviadas pelo solicitante.
 
-## Limites conhecidos
+Essas funcionalidades pertencem à versão ampliada da Unidade IV. A separação permite demonstrar a evolução do projeto sem confundir as entregas das duas etapas.
 
-- A equipe atualiza manualmente informações como status, responsável e última atualização.
-- O protótipo não documenta implementação de login completo, SLA ou atribuição automática de técnicos.
-- A IA oferece apoio à triagem, mas não substitui a decisão da equipe de TI.
-- Os webhooks precisam de proteção adicional antes de qualquer uso com dados reais.
+## Limites e cuidados
 
-## Referência técnica
-
-A arquitetura foi reconstruída a partir do README e dos documentos descritos no repositório [Sistema de Triagem Automática — Vibe Coder](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder). Os diagramas acima são uma representação didática simplificada, não uma exportação literal dos workflows.
+- A IA deve apoiar a triagem, não substituir a avaliação humana.
+- As informações precisam ser validadas antes do processamento.
+- Falhas em serviços externos devem ser tratadas.
+- Dados pessoais e credenciais precisam de proteção.
+- A arquitetura conceitual não substitui testes dos fluxos efetivamente configurados.
