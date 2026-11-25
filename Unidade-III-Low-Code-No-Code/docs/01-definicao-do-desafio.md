@@ -2,38 +2,36 @@
 
 ## Contexto
 
-A atividade da Unidade III propõe selecionar um problema simples e delimitar uma solução que possa ser prototipada com ferramentas Low Code, No Code ou Vibecode, com apoio de Inteligência Artificial.
+A Unidade III propõe escolher um problema delimitado e desenvolver um mini projeto com apoio de ferramentas Low Code, No Code ou Vibecode e recursos de Inteligência Artificial.
 
-O desafio recuperado para esta documentação é a **triagem de chamados de suporte de TI**.
+O grupo escolheu trabalhar com a **triagem de chamados de suporte de TI**, tema que foi mantido e ampliado na Unidade IV.
 
 ## Problema identificado
 
-Solicitações de suporte podem chegar por mensagens, ligações ou conversas informais. Quando não existe um registro centralizado, os pedidos podem se perder, a prioridade pode ser definida de maneira inconsistente e o solicitante pode não conseguir acompanhar o atendimento.
+Solicitações de suporte técnico podem chegar de maneira informal ou desorganizada. Isso dificulta reunir as informações necessárias, identificar o tipo de problema e encaminhar cada solicitação para análise.
 
 ## Pergunta orientadora
 
-Como combinar automação visual, uma interface web e Inteligência Artificial para organizar a abertura, a classificação inicial e o acompanhamento de chamados de suporte?
+Como utilizar automação visual e Inteligência Artificial para organizar as informações recebidas em chamados de suporte e apoiar sua triagem inicial?
 
 ## Objetivo geral
 
-Construir um protótipo que permita registrar chamados, gerar um protocolo, sugerir uma classificação inicial com IA e oferecer um canal de consulta do andamento.
+Desenvolver um mini projeto que demonstre como ferramentas Low Code e recursos de IA podem apoiar o recebimento, a organização e a classificação inicial de solicitações de suporte de TI.
 
 ## Objetivos específicos
 
-- Receber dados do solicitante por um formulário web.
-- Validar os campos essenciais e gerar um protocolo.
-- Utilizar IA para sugerir categoria, prioridade, resumo e orientação inicial.
-- Armazenar o chamado em uma planilha.
-- Enviar confirmação e alerta conforme a prioridade.
-- Permitir consulta do chamado por protocolo e e-mail.
-- Identificar limitações, riscos e necessidades de revisão humana.
+- Delimitar as informações essenciais para registrar uma solicitação.
+- Estruturar um fluxo inicial de recebimento e organização de chamados.
+- Explorar a IA como apoio à identificação da categoria e prioridade.
+- Compreender a integração entre ferramentas e serviços.
+- Identificar riscos, limitações e a necessidade de validação humana.
 
-## Delimitação
+## Delimitação da Unidade III
 
-O protótipo documentado não contempla um sistema completo de gestão de serviços de TI. A documentação do projeto indica que login de usuários, atribuição automática de técnicos, SLA e painel de indicadores estavam fora do escopo descrito. A atualização de status dependia de ação manual da equipe na planilha.
+Esta etapa corresponde à proposta e ao protótipo inicial de triagem. Não se deve atribuir a ela, retroativamente, todos os recursos desenvolvidos na etapa seguinte.
 
-## Relação com o projeto em grupo
+O chatbot de acompanhamento, a consulta por protocolo e e-mail, o registro de informações adicionais pelo chat e o conjunto ampliado de notificações e integrações são apresentados como parte da evolução da Unidade IV.
 
-Este desafio corresponde ao protótipo **Triagem Inteligente de Chamados de Suporte de TI**, desenvolvido em colaboração e documentado no [repositório do projeto](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder).
+## Continuidade do projeto
 
-Os exercícios originais da Unidade III não foram recuperados. Este documento reconstrói a definição do desafio com base no roteiro da professora e na documentação disponível do projeto, sem afirmar que seja uma cópia da entrega original.
+A temática foi mantida na Unidade IV. O grupo, em colaboração, evoluiu a proposta inicial para um sistema mais completo de triagem de chamados. Assim, a Unidade III registra a concepção e o aprendizado inicial, enquanto a Unidade IV apresenta a ampliação da solução.
