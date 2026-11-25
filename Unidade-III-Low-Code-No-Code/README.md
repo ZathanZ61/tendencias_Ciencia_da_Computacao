@@ -5,113 +5,102 @@
 **Estudante:** Nathan Ferreira dos Santos  
 **Curso:** Ciência da Computação
 
-## 1. Apresentação da unidade
+## 1. Apresentação
 
-Esta unidade aborda o desenvolvimento de soluções digitais com plataformas visuais, ferramentas de automação e apoio de Inteligência Artificial. O objetivo é compreender como abordagens **Low Code**, **No Code** e **Vibecode** podem acelerar a construção de protótipos, sem dispensar planejamento, validação, segurança e revisão humana.
+A Unidade III propôs desenvolver um mini projeto funcional utilizando abordagens Low Code, No Code e Vibecode, com apoio de Inteligência Artificial. O desafio escolhido pelo grupo foi a **triagem de chamados de suporte de Tecnologia da Informação (TI)**.
 
-A documentação foi organizada a partir das orientações da professora e da recuperação do projeto em grupo que serviu de base para a etapa posterior: **Triagem Inteligente de Chamados de Suporte de TI**. O projeto está documentado no repositório de seu integrante/colaborador Douglas: [Sistema de Triagem Automática — Vibe Coder](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder).
+A ideia começou como um protótipo para organizar solicitações de suporte: receber as informações do usuário, estruturar o chamado e apoiar sua classificação inicial. O trabalho serviu de ponto de partida para uma versão mais completa desenvolvida posteriormente na Unidade IV.
 
-> **Nota sobre a reconstrução:** os exercícios originais da Unidade III não estão mais disponíveis para o estudante. Este registro recompõe o processo com base no roteiro fornecido pela professora e na documentação técnica disponível do protótipo. Não representa a recuperação de arquivos originais nem atribui ao estudante, individualmente, todo o desenvolvimento do grupo.
+Esta documentação registra a proposta e os conceitos da etapa inicial. Ela não deve ser confundida com todas as funcionalidades que foram acrescentadas durante a evolução do projeto.
 
-## 2. Objetivo
+## 2. Problema e objetivo
 
-Desenvolver e documentar um protótipo funcional que demonstre como ferramentas Low Code / No Code e recursos de IA podem automatizar uma etapa de um processo real, avaliando vantagens, limitações e cuidados de segurança.
+Solicitações de suporte técnico podem chegar de maneira desorganizada, dificultando o registro, a identificação do tipo de problema e a definição de prioridade.
 
-## 3. Desafio escolhido
+**Objetivo geral:** demonstrar como ferramentas de automação visual e recursos de IA podem apoiar a organização e a triagem inicial de chamados de TI.
 
-### Triagem inteligente de chamados de suporte de TI
+**Objetivos específicos:**
+- Definir um fluxo simples para receber solicitações de suporte.
+- Organizar os dados essenciais de cada chamado.
+- Explorar o uso de IA como apoio à classificação inicial.
+- Conhecer a integração entre ferramentas e serviços.
+- Avaliar vantagens, limitações e cuidados de segurança.
 
-O problema escolhido foi a dificuldade de organizar solicitações de suporte técnico que chegam por canais diferentes. Sem um registro centralizado, chamados podem se perder, a priorização pode ser inconsistente e o solicitante pode ter dificuldade para acompanhar o atendimento.
+## 3. Escopo do mini projeto — Unidade III
 
-**Objetivo da solução:** permitir que uma pessoa registre um chamado em uma página web, receba um protocolo, tenha uma classificação inicial sugerida por IA e possa consultar o andamento por um assistente de chat.
+O escopo desta etapa é a ideia inicial de triagem: receber uma solicitação, organizar suas informações e apoiar a classificação para facilitar o encaminhamento à equipe responsável.
 
-**Público envolvido:**
-- Solicitantes, que registram problemas e acompanham seus protocolos.
-- Equipe de TI, que recebe chamados organizados e atualiza o andamento.
+A proposta não deve ser descrita como se já incluísse todos os recursos da versão posterior. Funcionalidades como chatbot de acompanhamento, consulta de chamados por protocolo e e-mail, registro de informações adicionais pelo chat e fluxos mais completos de notificação pertencem à evolução documentada na Unidade IV.
 
-**Escopo documentado do protótipo:**
-- Formulário web para abertura de chamados.
-- Validação dos dados e geração de protocolo.
-- Sugestão de categoria, prioridade, resumo e orientação inicial com IA.
-- Registro das informações em Google Sheets.
-- Confirmação por Gmail e alerta para chamados de prioridade alta.
-- Chat de acompanhamento com Gemini, consultando protocolo e e-mail.
+## 4. Escolha da abordagem e das ferramentas
 
-## 4. Plataforma e tecnologias escolhidas
+O projeto explorou uma abordagem híbrida:
+- **Low Code:** utilização de uma plataforma visual para estruturar etapas, condições e integrações.
+- **Inteligência Artificial:** apoio à interpretação e classificação inicial das solicitações.
+- **Código tradicional:** possibilidade de construir uma interface web personalizada.
+- **Vibecode:** uso iterativo de instruções em linguagem natural para apoiar a criação e o ajuste de componentes, sempre com revisão humana.
 
-| Ferramenta | Utilização |
-|---|---|
-| **n8n** | Orquestração visual dos fluxos, regras, validações, condições e integrações. |
-| **OpenAI** | Apoio à classificação inicial dos chamados. |
-| **Google Gemini** | Assistente conversacional para acompanhamento dos chamados. |
-| **Google Sheets** | Registro centralizado dos chamados e informações de acompanhamento. |
-| **Gmail** | Envio de confirmação e alertas. |
-| **HTML, CSS e JavaScript** | Construção da página web e do chat integrado. |
-| **Vercel** | Publicação da interface web. |
-| **GitHub** | Versionamento e documentação do projeto. |
+O n8n foi utilizado como plataforma de automação visual na solução. A escolha se relaciona à possibilidade de conectar etapas e serviços em fluxos compreensíveis, sem desenvolver toda a integração manualmente.
 
-### Justificativa
+## 5. Processo de desenvolvimento
 
-O n8n foi adequado porque permite visualizar e organizar fluxos de automação, conectar serviços e criar condições para diferentes situações. O Google Sheets serviu como armazenamento simples para o protótipo, enquanto os serviços de IA apoiaram a classificação e a interação em linguagem natural.
+O trabalho foi organizado conforme as etapas propostas na orientação da professora:
 
-A interface própria em HTML, CSS e JavaScript permitiu controlar a experiência do usuário. A Vercel facilitou a publicação da página. Essa composição demonstrou uma abordagem híbrida: automação visual combinada com código tradicional e assistência de IA.
+1. **Definição do desafio:** identificar a dificuldade de organizar chamados de suporte e delimitar a triagem inicial como objetivo.
+2. **Escolha da plataforma:** selecionar uma ferramenta visual capaz de organizar a lógica e conectar serviços.
+3. **Integração com IA e Vibecode:** experimentar instruções em linguagem natural e recursos de IA como apoio ao desenvolvimento e à classificação.
+4. **Testes e segurança:** verificar entradas, resultados, falhas e a necessidade de revisão humana.
+5. **Documentação:** registrar decisões, arquitetura, aprendizados e limitações.
 
-## 5. Integração com Vibecode e Inteligência Artificial
+## 6. Testes e cuidados
 
-O projeto combina automação visual e desenvolvimento de interface com recursos de IA.
+A validação de um protótipo deve considerar tanto o caminho esperado quanto situações de erro. Entre os cuidados relevantes estão:
+- verificar se os dados recebidos estão completos;
+- tratar entradas inválidas;
+- não considerar a classificação da IA como decisão definitiva;
+- prever comportamento controlado quando uma integração falhar;
+- proteger credenciais e dados pessoais;
+- utilizar dados fictícios em demonstrações acadêmicas.
 
-Na abertura de chamados, o fluxo recebe os dados, valida as informações, gera um protocolo e encaminha a descrição para classificação assistida por IA. A resposta esperada contém categoria, prioridade, resumo e sugestão inicial. Há um caminho alternativo (fallback) para que uma falha ou resposta inválida da IA não impeça, por si só, a continuidade prevista do fluxo.
-
-No acompanhamento, o Gemini responde a perguntas sobre um chamado localizado previamente. A busca e a conferência do protocolo com o e-mail são realizadas pelo workflow, antes de os dados serem encaminhados ao modelo.
-
-**Distinção importante:** Vibecode é a prática de desenvolver com apoio iterativo de ferramentas de IA, usando instruções em linguagem natural para criar ou ajustar partes da solução. O projeto também contém programação convencional em HTML, CSS e JavaScript; portanto, não deve ser descrito como uma aplicação inteiramente No Code.
-
-Consulte [Integração e arquitetura](docs/03-integracao-e-arquitetura.md) para o fluxo detalhado.
-
-## 6. Testes, validação e segurança
-
-A documentação técnica do projeto descreve validações de campos, tratamento de falhas da IA, verificação de identidade no chat e cenários de teste. Entretanto, ela registra que, no momento daquele levantamento, apenas o cenário de prioridade alta havia sido marcado como aprovado com dados simulados; os demais cenários ainda estavam pendentes no registro.
-
-Por esse motivo, este repositório não declara que todos os testes foram concluídos ou aprovados. Os resultados devem ser atualizados somente com evidências de execução.
-
-Principais cuidados identificados:
-- Validar os dados no navegador e também no workflow/servidor.
-- Não confiar somente na classificação automática da IA; manter revisão humana.
-- Não permitir que o chat consulte chamados sem conferir protocolo e e-mail.
-- Não expor chaves ou credenciais no código da página ou no GitHub.
-- Restringir o acesso à planilha, que pode conter dados pessoais.
-- Proteger webhooks públicos contra abuso, spam e requisições indevidas.
-- Utilizar dados fictícios nas demonstrações acadêmicas.
-
-Mais detalhes em [Testes e segurança](docs/04-testes-e-seguranca.md).
+Os documentos desta pasta descrevem os critérios e cuidados identificados. Não se deve afirmar que todos os testes foram aprovados sem evidências de execução.
 
 ## 7. Análise crítica
 
-### Três vantagens
-1. **Agilidade:** o editor visual do n8n e as ferramentas de IA ajudam a estruturar fluxos e integrações com menos código manual.
-2. **Visualização da lógica:** condições, validações e caminhos alternativos podem ser inspecionados nos workflows.
-3. **Integração:** formulário, automação, IA, planilha e e-mail trabalham em conjunto para reduzir tarefas repetitivas.
+### Vantagens
+1. **Agilidade:** ferramentas visuais e IA podem reduzir o tempo necessário para estruturar um protótipo.
+2. **Integração:** plataformas Low Code facilitam a conexão entre diferentes serviços.
+3. **Aprendizado prático:** o projeto permite compreender como interface, automação e IA podem trabalhar em conjunto.
 
-### Três limitações
-1. **Dependência de serviços externos:** disponibilidade, limites de uso, custos e alterações nas APIs podem afetar o funcionamento.
-2. **Possibilidade de erro da IA:** uma classificação pode estar incorreta ou não representar a gravidade real do chamado.
-3. **Segurança e manutenção:** endpoints públicos, dados pessoais em planilhas e atualização manual de status exigem controles e acompanhamento.
+### Limitações
+1. **Dependência de serviços externos:** disponibilidade, limites e custos podem afetar o funcionamento.
+2. **Possibilidade de erro da IA:** classificações automáticas precisam de validação humana.
+3. **Segurança e manutenção:** integrações e dados exigem controle de acesso, testes e acompanhamento.
 
-A reflexão completa está em [Análise crítica e aprendizados](docs/05-analise-critica.md).
+## 8. Evolução para a Unidade IV
 
-## 8. Relação com a etapa posterior
+A temática de triagem de chamados foi mantida na Unidade IV. A partir da ideia inicial, o grupo desenvolveu uma versão mais completa, em colaboração com Douglas, ampliando o fluxo e acrescentando funcionalidades.
 
-O protótipo de triagem de chamados foi utilizado como base para a continuidade do trabalho na etapa posterior da disciplina. Esta pasta registra os conceitos e o processo relacionados à Unidade III; a documentação do sistema e seus arquivos técnicos permanecem no repositório de projeto indicado acima.
+Na evolução, a solução passou a contemplar:
+- formulário web para abertura de chamados;
+- geração de protocolo e validação dos dados;
+- classificação assistida por IA;
+- registro em Google Sheets;
+- notificações por Gmail;
+- chatbot com Gemini para consulta do andamento mediante protocolo e e-mail;
+- registro de informações adicionais encaminhadas pelo solicitante.
 
-**Repositório do projeto em grupo:** [DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)  
-**Demonstração registrada no README do projeto:** [Aplicação publicada na Vercel](https://sistema-de-triagem-eosin.vercel.app/).
+Esses recursos são apresentados como evolução do projeto na Unidade IV, e não como funcionalidades que já estavam concluídas na etapa inicial da Unidade III.
 
-## 9. Organização desta unidade
+**Demonstração da versão evoluída:** https://sistema-de-triagem-eosin.vercel.app/
 
+## 9. Documentos desta unidade
+
+- [01 — Definição do desafio](docs/01-definicao-do-desafio.md)
+- [02 — Escolha da plataforma](docs/02-escolha-da-plataforma.md)
 - [03 — Integração e arquitetura](docs/03-integracao-e-arquitetura.md)
 - [04 — Testes e segurança](docs/04-testes-e-seguranca.md)
-- [05 — Análise crítica e aprendizados](docs/05-analise-critica.md)
+- [05 — Análise crítica](docs/05-analise-critica.md)
 
 ---
 
-*Registro acadêmico reconstruído a partir das orientações da Unidade III e da documentação técnica disponível do projeto em grupo.*
+*Documentação acadêmica da etapa inicial do projeto de triagem de chamados, organizada conforme as orientações da Unidade III.*
