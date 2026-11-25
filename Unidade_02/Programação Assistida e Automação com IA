@@ -1,0 +1,29 @@
+
+## 1. Problema
+Automatizar o processamento de um lote de valores de vendas para gerar um resumo rápido com total, média, maior venda e menor venda, evitando cálculos manuais repetitivos sujeitos a erro de digitação ou soma.
+
+## 2. Entrada
+Uma lista de números representando valores de vendas (inteiros ou decimais, ex.: `[120.50, 85.00, 310.75, 49.90, 200.00]`, ou lista vazia / entradas inválidas para teste).
+
+## 3. Processamento
+Validar se a lista contém valores numéricos válidos e não está vazia; em seguida, calcular a soma total, a média aritmética, o maior valor e o menor valor usando funções nativas do Python.
+
+## 4. Saída esperada
+Um resumo estruturado exibindo:
+- quantidade de vendas;
+- valor total;
+- valor médio;
+- maior venda;
+- menor venda.
+
+## 5. Prompt utilizado
+```text
+Atue como desenvolvedor Python.
+Contexto: Estou automatizando o resumo de valores de vendas em um script simples para uso em rotinas de conferência de caixa e relatórios.
+Problema: Preciso de uma função que receba uma lista de valores numéricos de vendas e retorne um dicionário com total, média, maior valor e menor valor.
+Entrada: Lista de números (int ou float).
+Saída esperada: Dicionário com as chaves 'quantidade', 'total', 'media', 'maior' e 'menor' (valores arredondados para 2 casas decimais quando aplicável).
+Linguagem: Python 3 (apenas biblioteca padrão).
+Restrições: Não usar bibliotecas externas; tratar lista vazia ou valores não numéricos sem quebrar silenciosamente com resultado errado.
+Critérios de qualidade: Código limpo, com type hints, docstring simples e fácil de ler para um estudante de Ciência da Computação.
+Casos de teste: Lista com vários valores, lista com um único valor, lista vazia e valor inválido.
