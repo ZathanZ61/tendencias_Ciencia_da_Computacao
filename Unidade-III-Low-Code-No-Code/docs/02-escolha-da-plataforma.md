@@ -2,51 +2,46 @@
 
 ## Critérios considerados
 
-A escolha das ferramentas deve considerar:
-- facilidade de montar e compreender os fluxos;
-- integração com serviços externos;
-- possibilidade de validar entradas e tratar erros;
-- suporte à integração com modelos de IA;
-- custo, limites de uso e segurança;
-- facilidade de demonstrar e documentar o protótipo.
+A escolha da plataforma para o mini projeto considerou:
+- facilidade para estruturar visualmente as etapas;
+- possibilidade de integrar serviços;
+- suporte a condições e validação de dados;
+- possibilidade de utilizar recursos de Inteligência Artificial;
+- facilidade de testar e demonstrar o protótipo;
+- custos, limites de uso e segurança.
 
-## Ferramentas utilizadas no protótipo documentado
+## Plataforma de automação
 
-| Ferramenta | Responsabilidade |
+O **n8n** foi utilizado como ferramenta de automação visual. Sua interface permite organizar etapas, conectar serviços e configurar condições sem precisar programar toda a lógica de integração manualmente.
+
+A escolha está alinhada ao objetivo da Unidade III: compreender, na prática, como uma plataforma Low Code pode apoiar a construção de uma solução.
+
+## Abordagem híbrida
+
+O projeto se relaciona a três abordagens:
+
+| Abordagem | Aplicação no contexto do projeto |
 |---|---|
-| n8n Cloud | Construção e execução visual das automações. |
-| OpenAI | Classificação inicial assistida por IA na abertura do chamado. |
-| Google Gemini | Conversa para acompanhamento do chamado. |
-| Google Sheets | Armazenamento tabular dos registros. |
-| Gmail | Notificações ao solicitante e à equipe. |
-| HTML, CSS e JavaScript | Interface web, formulário e chat. |
-| Vercel | Hospedagem da página. |
-| GitHub | Versionamento e documentação. |
+| Low Code | Organização visual das etapas e integrações por meio do n8n. |
+| No Code | Uso de recursos configuráveis sem escrever código para cada operação. |
+| Vibecode | Apoio de IA por meio de instruções em linguagem natural para criar, ajustar ou revisar partes da solução. |
 
-## Justificativa da escolha do n8n
+A solução deve ser entendida como híbrida. A presença de uma interface construída com tecnologias web e de configurações específicas impede classificá-la integralmente como No Code.
 
-O n8n foi utilizado como núcleo de automação porque permite organizar visualmente etapas, condições, integrações e tratamento de erros. Isso se adequa ao objetivo de demonstrar um processo que recebe dados, valida informações, consulta serviços de IA, grava registros e envia notificações.
+## Ferramentas na evolução
 
-O Google Sheets foi utilizado como armazenamento simples para o protótipo, e o Gmail como canal de notificação. A página própria possibilitou criar uma interface específica para abertura e acompanhamento.
+Na versão ampliada da Unidade IV, a solução passou a documentar a integração de n8n, serviços de IA (OpenAI e Gemini), Google Sheets, Gmail, interface em HTML/CSS/JavaScript e publicação na Vercel.
 
-## Classificação da abordagem
+Essa relação descreve a versão evoluída. Não significa que todas essas integrações e funcionalidades já faziam parte do escopo inicial da Unidade III.
 
-A solução é **híbrida**:
-- possui características Low Code na orquestração visual com n8n;
-- utiliza código tradicional na interface em HTML, CSS e JavaScript;
-- integra serviços de IA, que podem apoiar o processo de Vibecode quando utilizados de forma iterativa para gerar e revisar partes da solução.
+## Justificativa
 
-Não é adequado classificar o sistema inteiro como No Code, pois há código convencional na interface e nas integrações.
+O n8n foi adequado ao objetivo acadêmico por tornar o fluxo de automação visual e facilitar a conexão entre diferentes serviços. O uso de IA permite experimentar classificação e interpretação de informações, mas os resultados precisam ser revisados e testados.
 
-## Configuração e evidências
+## Cuidados de configuração
 
-A documentação técnica do projeto registra uma página publicada na Vercel e workflows no n8n. O repositório do projeto contém instruções de configuração e um arquivo exportado do workflow do chatbot. O workflow de abertura de chamados não estava exportado no repositório no momento descrito pelo README.
-
-- [Repositório do projeto e documentação técnica](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)
-- [Demonstração web registrada no projeto](https://sistema-de-triagem-eosin.vercel.app/)
-
-Antes de apresentar ou reutilizar o protótipo, é necessário confirmar se os serviços e workflows continuam ativos. Não inclua credenciais, tokens ou dados reais nas evidências.
-
-## Limitações da escolha
-
-A solução depende de serviços externos, contas, credenciais, cotas e disponibilidade das plataformas. O uso de planilha como armazenamento é adequado para uma demonstração, mas pode não atender a requisitos de escala, controle de acesso e auditoria de um sistema de produção.
+- Não inserir senhas, tokens ou chaves de API em arquivos públicos.
+- Utilizar credenciais armazenadas de forma segura na plataforma.
+- Testar os fluxos com dados fictícios.
+- Verificar entradas e respostas antes de considerar uma etapa concluída.
+- Confirmar a disponibilidade dos serviços antes de uma demonstração.
