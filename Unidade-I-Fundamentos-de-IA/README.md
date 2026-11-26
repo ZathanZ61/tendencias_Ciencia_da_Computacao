@@ -4,10 +4,8 @@ Esta unidade reúne atividades introdutórias sobre Inteligência Artificial, id
 
 ## Atividades
 
-- [Identificando a IA](../Atividades/Identificando-a-IA) — análise de aplicações de IA em tecnologias do cotidiano.
-- [Engenharia de Prompt — Fundamentos](../Unidade1/engenharia-de-prompt-fundamentos01) — comparação entre prompt genérico e estruturado.
-- [Refinamento de Prompts](../Unidade1/refinamento_de_prompt) — evolução iterativa de prompts com análise dos resultados.
+1. [Identificando a IA](docs/01-identificando-a-ia.md) — análise de aplicações de IA em tecnologias do cotidiano.
+2. [Engenharia de Prompt — Fundamentos](docs/02-engenharia-de-prompt-fundamentos.md) — comparação entre prompt genérico e estruturado.
+3. [Refinamento de Prompts: Fila e Pilha](docs/03-refinamento-de-prompts-fila-e-pilha.md) — refinamento iterativo, comparação de resultados e validação.
 
-## Observação sobre arquivos históricos
-
-Os documentos originais foram preservados nos caminhos em que já estavam registrados. A página atual funciona como índice da unidade, evitando mover ou apagar arquivos sem necessidade.
+Todos os trabalhos desta unidade estão reunidos nesta pasta. Os arquivos históricos duplicados foram consolidados sem eliminar o conteúdo exclusivo.
