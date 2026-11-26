@@ -12,7 +12,7 @@ Este documento diferencia funcionalidades descritas na arquitetura de testes efe
 |---|---|---|---|
 | T01 | Enviar formulário com dados válidos | Gerar protocolo e iniciar o fluxo | Duas aberturas reais relatadas em 26/11/2026; ver T12 e T13 |
 | T02 | Enviar formulário com campos obrigatórios vazios | Impedir envio ou informar campos ausentes | A comprovar em execução |
-| T03 | Solicitação classificada como prioridade alta | Registrar a sugestão e disparar alerta conforme configuração | Classificação Rede/Internet / Alta relatada em T13; alerta interno não verificado |
+| T03 | Solicitação classificada como prioridade alta | Registrar a sugestão e disparar alerta conforme configuração | Classificação Rede/Internet / Alta em T13; Douglas confirmou ao responsável pelo registro que o alerta interno está funcionando. |
 | T04 | IA indisponível | Tratar falha sem inventar classificação | A comprovar em execução |
 | T05 | Consultar protocolo e e-mail correspondentes | Exibir dados do chamado localizado | Chatbot respondeu status Aberto em T13; demais consultas pendentes |
 | T06 | Consultar protocolo inexistente | Informar que não encontrou o registro | A comprovar em execução |
@@ -29,7 +29,7 @@ Este documento diferencia funcionalidades descritas na arquitetura de testes efe
 | T12 | Chamado sobre impossibilidade de realizar a saída de produtos no sistema de coleta | A página confirmou a abertura, gerou protocolo, classificou como Software / Média e exibiu resumo e sugestão inicial. | Executado pelo usuário; sucesso na página relatado. |
 | T13 | Instabilidade ou queda de internet afetando todo o setor | A página confirmou a abertura; protocolo `CH-20261126-VCTH`; categoria Rede/Internet; prioridade Alta; sugestão inicial exibida. O chatbot respondeu que o status era Aberto. O usuário confirmou o recebimento do e-mail de confirmação. | Executado pelo usuário; página, chatbot e recebimento do e-mail confirmados por relato. |
 
-**Não verificados independentemente nessas execuções:** gravação do registro no Google Sheets, envio do alerta interno de prioridade alta e estado Published/Active dos workflows no painel n8n. A evidência relatada não autoriza marcar esses itens como aprovados.
+**Confirmação posterior do mantenedor:** Nathan informou que Douglas confirmou o funcionamento da gravação no Google Sheets, do alerta interno de prioridade alta e dos workflows ativos no n8n. Esta documentação registra a confirmação do responsável pelo projeto, mas não representa uma inspeção independente realizada por esta revisão. A exportação e o versionamento dos workflows JSON continuam pendentes de comprovação no Git.
 
 ## 3. Evidências necessárias
 
@@ -48,10 +48,10 @@ Não incluir senhas, tokens, chaves de API ou dados pessoais reais nas evidênci
 
 Os pontos abaixo são itens de atenção observados na documentação e na análise anterior do repositório. Devem ser reconferidos na versão que Douglas atualizar:
 
-1. **Exportação dos fluxos:** a árvore consultada do repositório principal não contém exportações JSON dos workflows. É importante manter os exports sanitizados, sem credenciais ou segredos.
+1. **Exportação dos fluxos:** a árvore consultada do repositório principal não contém exportações JSON dos workflows. Douglas confirmou o funcionamento dos fluxos na instância n8n, mas isso não comprova que os arquivos JSON estejam exportados e versionados no Git. É importante manter os exports sanitizados, sem credenciais ou segredos.
 2. **Arquivo do chatbot:** o README antigo citava `n8n/chatbot-chamados-n8n.json`, mas esse arquivo não foi localizado no caminho informado na branch `main`. Isso não prova que o chatbot não esteja funcionando; significa que sua reprodução a partir do Git depende de obter a exportação atual.
-3. **URLs:** a documentação foi alinhada ao endereço de demonstração confirmado `https://sistema-de-triagem-automatica.vercel.app/`. O frontend e a documentação indicam o host `udf-tendencias-ccp.app.n8n.cloud`; o estado Published/Active deve ser conferido pelo responsável no painel n8n.
-4. **Testes incompletos:** duas execuções foram relatadas em 26/11/2026 e registradas acima. Os demais cenários permanecem pendentes; persistência no Sheets e alerta interno não foram verificados independentemente.
+3. **URLs e estado do n8n:** a documentação foi alinhada ao endereço de demonstração confirmado `https://sistema-de-triagem-automatica.vercel.app/`. Douglas confirmou que os workflows estão funcionando na instância n8n; a revisão registra essa confirmação, sem acesso direto ao painel.
+4. **Testes incompletos:** duas execuções foram relatadas em 26/11/2026. A confirmação do mantenedor também cobre a gravação no Sheets e o alerta interno; os demais cenários da matriz permanecem pendentes.
 5. **Atualização de status:** se o andamento for alterado manualmente na planilha, o chatbot depende da atualização do registro para apresentar a informação correta.
 6. **Segurança dos webhooks:** endpoints públicos exigem validação de entradas, limitação de abuso e proteção contra chamadas indevidas.
 7. **Dependência externa:** falhas no n8n, nos provedores de IA, no Google Sheets, no Gmail ou na hospedagem podem interromper partes do serviço.
@@ -69,9 +69,8 @@ Os pontos abaixo são itens de atenção observados na documentação e na anál
 ## 6. Próximos passos técnicos
 
 Os próximos ajustes de implementação pertencem ao fluxo colaborativo no repositório original. Entre os itens que merecem conferência estão:
-- obter e versionar, após sanitização, os fluxos de abertura e chatbot;
-- conferir no painel n8n o estado Published/Active e as Production URLs;
-- verificar diretamente a persistência no Sheets e o alerta interno de prioridade alta;
+- obter e versionar, após sanitização, os exports JSON dos fluxos de abertura e chatbot;
+- guardar evidência documental da confirmação de funcionamento feita pelo mantenedor (sem expor credenciais ou dados pessoais);
 - executar os cenários pendentes com dados fictícios;
 - registrar evidências sem dados pessoais, credenciais ou tokens;
 - revisar proteção de webhooks e acesso aos registros;
