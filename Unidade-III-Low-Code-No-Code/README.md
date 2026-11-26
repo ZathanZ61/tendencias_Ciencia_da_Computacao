@@ -91,7 +91,7 @@ Na evolução, a solução passou a contemplar:
 
 Esses recursos são apresentados como evolução do projeto na Unidade IV, e não como funcionalidades que já estavam concluídas na etapa inicial da Unidade III.
 
-**Demonstração da versão evoluída:** https://sistema-de-triagem-eosin.vercel.app/
+**Demonstração da versão evoluída:** https://sistema-de-triagem-automatica.vercel.app/
 
 ## 9. Documentos desta unidade
 
