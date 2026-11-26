@@ -2,7 +2,7 @@
 
 ## 1. Contexto
 
-Na Unidade IV, o projeto de triagem de chamados foi ampliado para utilizar serviços de IA em etapas de interpretação e atendimento. A solução combina automação de processos com modelos de linguagem, em vez de depender de um único agente que tome todas as decisões.
+Na Unidade IV, o projeto de triagem de chamados utiliza automação de processos e modelos de linguagem em funções distintas. O n8n coordena os fluxos e as integrações; o componente de IA de triagem sugere uma classificação estruturada; e o assistente Gemini permite conversar sobre o andamento do chamado. Não se trata de um único agente com autonomia para executar todas as etapas.
 
 É importante diferenciar o agente conversacional do fluxo automatizado: o n8n coordena etapas e integrações; os modelos de IA interpretam informações e produzem sugestões; e a aplicação apresenta os recursos ao usuário.
 
@@ -10,7 +10,7 @@ Na Unidade IV, o projeto de triagem de chamados foi ampliado para utilizar servi
 
 ### 2.1 Agente de apoio à triagem
 
-**Finalidade:** analisar a descrição enviada pelo solicitante e produzir uma sugestão estruturada para auxiliar a equipe de suporte.
+**Finalidade:** analisar a descrição enviada pelo solicitante e produzir uma sugestão estruturada para auxiliar a equipe de suporte. Na arquitetura documentada, essa etapa utiliza um Basic LLM Chain com modelo OpenAI e Structured Output Parser, orquestrados pelo n8n.
 
 **Entradas esperadas:**
 - descrição do problema;
@@ -23,22 +23,22 @@ Na Unidade IV, o projeto de triagem de chamados foi ampliado para utilizar servi
 - resumo do problema;
 - orientação inicial.
 
-**Limite:** a saída do modelo é uma recomendação. Não deve ser considerada diagnóstico definitivo nem substituir a avaliação da equipe responsável.
+**Limite:** a saída do modelo é uma recomendação. O fluxo prevê valores de fallback quando a IA falha ou devolve uma resposta inválida. A sugestão não deve ser considerada diagnóstico definitivo nem substituir a avaliação da equipe responsável.
 
 ### 2.2 Agente conversacional de acompanhamento
 
 **Finalidade:** permitir que o solicitante consulte informações do chamado por meio de uma conversa.
 
-**Entradas principais:** protocolo do chamado e e-mail informado no cadastro.
+**Entradas principais:** protocolo, e-mail utilizado na abertura, mensagem e identificador de sessão enviados pela interface web. O fluxo n8n busca o registro no Google Sheets e confere a correspondência do e-mail antes de encaminhar os dados do chamado ao Gemini.
 
 **Responsabilidades:**
 - interpretar a pergunta do usuário;
-- consultar os dados disponíveis para localizar o chamado;
+- responder com base nos dados do chamado previamente localizado e validado pelo fluxo n8n;
 - apresentar o andamento conforme o registro encontrado;
 - orientar o usuário sobre as informações necessárias;
 - encaminhar ou registrar informações adicionais conforme o fluxo configurado.
 
-**Limite:** o chatbot deve responder com base nos dados consultados, sem inventar status, prazos ou ações que não estejam registrados.
+**Limites:** a busca e a verificação dos dados são realizadas por etapas do n8n; o modelo Gemini não deve receber acesso irrestrito à planilha. O assistente responde com base no registro localizado, não altera status, prioridade ou responsável e não deve inventar prazos ou ações que não estejam registrados. Informações adicionais podem ser registradas pelo fluxo para avaliação da equipe.
 
 ## 3. Fluxo simplificado
 
@@ -71,6 +71,6 @@ A equipe de suporte continua responsável por avaliar a solicitação, confirmar
 
 ## 6. Evidências e estado de validação
 
-A arquitetura e as responsabilidades acima foram descritas com base nos recursos documentados do projeto colaborativo. A confirmação do comportamento real de cada agente exige executar os fluxos no n8n com as credenciais configuradas e verificar as respostas e registros produzidos. Este documento não declara que todos os cenários foram executados ou aprovados.
+Em 26/11/2026, o usuário relatou uma execução em que o chatbot respondeu à pergunta sobre o andamento do chamado com o status **Aberto**. Essa evidência confirma uma interação funcional relatada, mas não comprova todos os cenários do assistente, a segurança contra consultas indevidas ou o funcionamento de todos os nós. A arquitetura e as responsabilidades acima foram descritas com base nos recursos documentados do projeto colaborativo. Este documento não declara que todos os cenários foram executados ou aprovados.
 
 **Repositório de implementação:** [Sistema de Triagem Automática — Vibe Coder](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)
