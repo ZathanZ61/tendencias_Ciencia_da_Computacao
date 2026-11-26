@@ -1,11 +1,11 @@
 # Unidade II — Programação Assistida e Colaboração Humano-Máquina
 
-Esta unidade reúne atividades sobre o uso de Inteligência Artificial como apoio à programação, com revisão humana, análise de código e testes.
+Esta unidade reúne atividades sobre o uso de Inteligência Artificial como apoio à programação, com revisão humana, análise de código, automação e testes.
 
 ## Atividades
 
-- [Colaboração Humano-Máquina](../Unidade_02/Humano-Maquina) — exemplo de refatoração de uma calculadora em Python, análise e testes.
-- [Programação Assistida e Automação com IA](../Unidade_02/Programação%20Assistida%20e%20Automação%20com%20IA) — definição do problema, elaboração de prompt e critérios de validação.
+1. [Colaboração Humano-Máquina — Calculadora em Python](docs/01-colaboracao-humano-maquina-calculadora.md) — refatoração, tratamento de erros, testes e reflexão.
+2. [Automação de Resumo de Vendas](docs/02-automacao-de-resumo-de-vendas.md) — definição de problema, entrada, processamento, saída esperada e prompt.
 
 ## Princípio de trabalho
 
