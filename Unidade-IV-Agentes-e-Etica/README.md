@@ -89,7 +89,7 @@ A aplicação de referência está publicada em [sistema-de-triagem-automatica.v
 **Resultados relatados em 26/11/2026:**
 - Abertura de chamado sobre saída de produtos no sistema de coleta: Software / Média, confirmação na página e sugestão inicial.
 - Abertura de chamado sobre instabilidade de internet no setor: Rede/Internet / Alta; chatbot respondeu status Aberto; e-mail de confirmação recebido.
-- D. Douglas confirmou o funcionamento da gravação no Sheets, do alerta interno de prioridade alta e dos workflows no n8n. A exportação/versionamento dos JSON permanece pendente de comprovação no repositório.
+- Douglas confirmou o funcionamento da gravação no Sheets, do alerta interno de prioridade alta e dos workflows no n8n. A exportação/versionamento dos JSON permanece pendente de comprovação no repositório.
 
 A árvore consultada do repositório principal não contém exportações JSON dos workflows; em particular, o arquivo de chatbot citado em instruções antigas não foi localizado no caminho indicado. Isso não significa que o chatbot não exista ou não funcione: a execução relatada confirma o uso do chatbot, mas a reprodução do workflow a partir do Git ainda depende da exportação sanitizada.
 
