@@ -1,0 +1,87 @@
+# Programação Assistida por IA — Colaboração Humano-Máquina
+
+Programação Assistida por Inteligência Artificial - O novo paradigma da colaboração Humano-Máquina
+.
+
+
+## Código inicial
+
+```python
+def calcular(a, b, operacao):
+    if operacao == "+":
+        return a + b
+    elif operacao == "-":
+        return a - b
+    elif operacao == "*":
+        return a * b
+    elif operacao == "/":
+        if b == 0:
+            return "Erro: divisao por zero"
+        return a / b
+    else:
+        return "Operacao invalida"
+
+
+print(calcular(10, 5, "+"))
+print(calcular(10, 0, "/"))
+```
+
+## Análise e refatoração
+
+No código inicial, a lógica funciona, mas eu quis deixar a leitura mais limpa e separar a execução interativa no terminal. Pedi para a IA organizar melhor a função e depois revisei linha por linha para ter certeza de que eu entendo tudo.
+
+```python
+def calcular(primeiro_numero: float, segundo_numero: float, operacao: str) -> float | str:
+    """Executa uma operacao matematica basica entre dois numeros."""
+    operacoes = {
+        "+": primeiro_numero + segundo_numero,
+        "-": primeiro_numero - segundo_numero,
+        "*": primeiro_numero * segundo_numero,
+    }
+
+    if operacao in operacoes:
+        return operacoes[operacao]
+
+    if operacao == "/":
+        if segundo_numero == 0:
+            return "Erro: nao e possivel dividir por zero."
+        return primeiro_numero / segundo_numero
+
+    return "Erro: operacao invalida. Use +, -, * ou /."
+
+
+def iniciar_calculadora() -> None:
+    try:
+        num1 = float(input("Digite o primeiro numero: "))
+        operacao = input("Digite a operacao (+, -, *, /): ").strip()
+        num2 = float(input("Digite o segundo numero: "))
+        resultado = calcular(num1, num2, operacao)
+        print("Resultado:", resultado)
+    except ValueError:
+        print("Erro: digite apenas numeros validos.")
+
+
+if __name__ == "__main__":
+    print(calcular(10, 5, "+"))
+    print(calcular(10, 0, "/"))
+```
+
+## Testes realizados
+
+Teste normal: calcular(10, 5, "+") -> retornou 15 (certo).
+
+Caso limite / erro: calcular(10, 0, "/") -> retornou a mensagem de divisão por zero sem travar o programa.
+
+Entrada inválida: testar com texto no float(input(...)) -> caiu no except ValueError e exibiu mensagem amigável.
+
+## Reflexão
+
+Onde a IA mais ajudou: em montar rápido a estrutura base e sugerir o tratamento de erro.
+
+Onde eu tive que ficar atento: no comportamento da divisão por zero e em garantir que o código ficasse simples sem ficar difícil de explicar.
+
+Consigo explicar o código? Sim, a função calcular faz a operação escolhida e bloqueia divisão por zero, enquanto iniciar_calculadora lida com a digitação do usuário.
+
+## Take away
+
+Programar com IA não significa deixar a IA programar por mim, mas usar a IA para ganhar velocidade e testar ideias, mantendo o controle, os testes e a responsabilidade sobre o código final.
