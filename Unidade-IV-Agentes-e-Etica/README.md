@@ -72,7 +72,7 @@ A IA oferece sugestões e apoio operacional. A classificação automática não 
 
 A solução depende de serviços externos, disponibilidade de internet, credenciais e configuração correta das integrações. Modelos generativos podem produzir classificações incorretas, interpretações incompletas ou respostas inconsistentes. Dados pessoais e informações potencialmente sensíveis precisam de proteção, acesso restrito e finalidade definida.
 
-A documentação dos testes deve refletir somente execuções comprovadas. Em 26/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com consulta de status Aberto pelo chatbot e recebimento do e-mail de confirmação. A gravação no Google Sheets e o alerta interno de prioridade alta não foram verificados independentemente. Os demais cenários permanecem pendentes.
+A documentação dos testes deve refletir somente execuções comprovadas. Em 26/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com consulta de status Aberto pelo chatbot e recebimento do e-mail de confirmação. Após essas execuções, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa confirmação foi repassada por Nathan e não equivale a uma inspeção independente desta revisão. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no Git. Os demais cenários permanecem pendentes.
 
 ## 8. Documentos
 
@@ -89,7 +89,7 @@ A aplicação de referência está publicada em [sistema-de-triagem-automatica.v
 **Resultados relatados em 26/11/2026:**
 - Abertura de chamado sobre saída de produtos no sistema de coleta: Software / Média, confirmação na página e sugestão inicial.
 - Abertura de chamado sobre instabilidade de internet no setor: Rede/Internet / Alta; chatbot respondeu status Aberto; e-mail de confirmação recebido.
-- Não foram confirmados independentemente: gravação no Sheets, alerta interno de prioridade alta e estado Published/Active dos workflows no painel n8n.
+- D. Douglas confirmou o funcionamento da gravação no Sheets, do alerta interno de prioridade alta e dos workflows no n8n. A exportação/versionamento dos JSON permanece pendente de comprovação no repositório.
 
 A árvore consultada do repositório principal não contém exportações JSON dos workflows; em particular, o arquivo de chatbot citado em instruções antigas não foi localizado no caminho indicado. Isso não significa que o chatbot não exista ou não funcione: a execução relatada confirma o uso do chatbot, mas a reprodução do workflow a partir do Git ainda depende da exportação sanitizada.
 
