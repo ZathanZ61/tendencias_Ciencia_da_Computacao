@@ -1,10 +1,13 @@
 # Produção do material complementar — Unidade I
 
-## Videoaula
+## Materiais publicados
 
-A videoaula **Fundamentos de IA e Prompt** foi produzida com apoio do NotebookLM, utilizando como fonte um PDF de apoio elaborado com auxílio de Inteligência Artificial.
+- [PDF — Fundamentos de IA e Engenharia de Prompt](Unidade_I_Fundamentos_de_IA_e_Engenharia_de_Prompt.pdf) — material de apoio utilizado como fonte no NotebookLM.
+- [Videoaula — Fundamentos de IA e Prompt](https://www.mediafire.com/file/qsz8azrv2bnkily/Fundamentos_de_IA_e_Prompt.mp4/file) — vídeo complementar produzido com apoio do NotebookLM.
 
-O material complementar foi pensado para apoiar os conteúdos da Unidade I, especialmente:
+## Conteúdos abordados
+
+O material foi organizado para apoiar os conteúdos da Unidade I, especialmente:
 - fundamentos de Inteligência Artificial;
 - modelos de linguagem e IA generativa;
 - funcionamento geral dos LLMs;
@@ -12,12 +15,10 @@ O material complementar foi pensado para apoiar os conteúdos da Unidade I, espe
 - refinamento de prompts;
 - limitações, vieses, alucinações e uso responsável da IA.
 
-## Acesso ao vídeo
+## Processo de produção
 
-[Assistir à videoaula — MediaFire](https://www.mediafire.com/file/qsz8azrv2bnkily/Fundamentos_de_IA_e_Prompt.mp4/file)
+O PDF de apoio foi elaborado com auxílio de ferramentas de Inteligência Artificial, considerando o conteúdo da Unidade I e os materiais de atividade organizados no repositório. Esse PDF foi utilizado como fonte no NotebookLM para apoiar a produção da videoaula.
 
-## Transparência sobre o uso de IA
+## Transparência e responsabilidade acadêmica
 
-O PDF utilizado como fonte e a videoaula tiveram apoio de ferramentas de Inteligência Artificial. O uso dessas ferramentas não substitui a conferência do conteúdo, a consulta às referências nem a responsabilidade acadêmica de quem apresenta o material.
-
-**Observação:** o link do vídeo foi informado pelo responsável pelo repositório. O PDF de apoio ainda deverá ser incluído na pasta de materiais para permitir sua consulta junto à videoaula.
+O uso de ferramentas de IA no preparo do PDF e da videoaula é declarado para manter a transparência do processo. O conteúdo deve ser conferido pelo estudante, com consulta às referências e avaliação crítica; as ferramentas de IA não substituem a revisão humana nem garantem ausência de erros.
