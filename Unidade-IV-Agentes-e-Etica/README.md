@@ -17,7 +17,7 @@ O desenvolvimento é colaborativo com Douglas. Esta pasta registra a participaç
 ## 2. Identificação e acesso ao projeto
 
 - **Repositório original (código e desenvolvimento colaborativo):** [Sistema de Triagem Automática — Vibe Coder](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)
-- **Demonstração publicada:** [Abrir aplicação na Vercel](https://sistema-de-triagem-eosin.vercel.app/)
+- **Demonstração publicada:** [Abrir aplicação na Vercel](https://sistema-de-triagem-automatica.vercel.app/)
 - **Repositório acadêmico desta disciplina:** [tendencias_Ciencia_da_Computacao](https://github.com/ZathanZ61/tendencias_Ciencia_da_Computacao)
 
 O repositório de Douglas é a fonte do código do projeto. Atualizações de implementação e publicação da aplicação permanecem sob o fluxo de trabalho colaborativo já existente. Esta documentação não altera arquivos, configurações ou hospedagem desse repositório.
@@ -63,8 +63,8 @@ A presença de uma tecnologia na arquitetura não significa, por si só, que tod
 3. Um fluxo de automação encaminha os dados para análise assistida por IA.
 4. A classificação sugerida é utilizada para organizar o registro do chamado.
 5. Os dados são registrados no Google Sheets.
-6. O Gmail é utilizado para confirmação ao solicitante e alerta de prioridade alta.
-7. O chatbot, apoiado pelo Gemini, recebe protocolo e e-mail para consultar informações do chamado e pode registrar informações adicionais.
+6. O Gmail envia a confirmação ao solicitante e o fluxo prevê uma ramificação de alerta para chamados classificados como prioridade Alta.
+7. No acompanhamento, o frontend envia protocolo, e-mail, mensagem e identificador de sessão ao webhook do chatbot. O fluxo n8n localiza o chamado no Google Sheets e confere o e-mail antes de encaminhar os dados daquele registro ao assistente Gemini. O chatbot pode registrar informações adicionais no campo previsto.
 
 A IA oferece sugestões e apoio operacional. A classificação automática não deve ser tratada como decisão infalível nem substituir a avaliação de uma pessoa responsável.
 
@@ -72,7 +72,7 @@ A IA oferece sugestões e apoio operacional. A classificação automática não 
 
 A solução depende de serviços externos, disponibilidade de internet, credenciais e configuração correta das integrações. Modelos generativos podem produzir classificações incorretas, interpretações incompletas ou respostas inconsistentes. Dados pessoais e informações potencialmente sensíveis precisam de proteção, acesso restrito e finalidade definida.
 
-A documentação dos testes deve refletir somente execuções comprovadas. Cenários ainda não executados permanecem identificados como pendentes, sem serem apresentados como aprovados.
+A documentação dos testes deve refletir somente execuções comprovadas. Em 26/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com consulta de status Aberto pelo chatbot e recebimento do e-mail de confirmação. Após essas execuções, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa confirmação foi repassada por Nathan e não equivale a uma inspeção independente desta revisão. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no Git. Os demais cenários permanecem pendentes.
 
 ## 8. Documentos
 
@@ -81,6 +81,17 @@ A documentação dos testes deve refletir somente execuções comprovadas. Cená
 - [03 — Viés algorítmico e responsabilidade social](docs/03-vies-algoritmico-e-etica.md)
 - [04 — Projeto de solução inteligente](docs/04-projeto-solucao-inteligente.md)
 - [05 — Validação, limitações e próximos passos](docs/05-validacao-e-limitacoes.md)
+
+## 9. Estado da implementação e das evidências
+
+A aplicação de referência está publicada em [sistema-de-triagem-automatica.vercel.app](https://sistema-de-triagem-automatica.vercel.app/). O repositório de Douglas permanece como fonte do código. A documentação complementar das duas execuções e da auditoria está registrada na [Pull Request #2](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder/pull/2), ainda sujeita à revisão do mantenedor.
+
+**Resultados relatados em 26/11/2026:**
+- Abertura de chamado sobre saída de produtos no sistema de coleta: Software / Média, confirmação na página e sugestão inicial.
+- Abertura de chamado sobre instabilidade de internet no setor: Rede/Internet / Alta; chatbot respondeu status Aberto; e-mail de confirmação recebido.
+- Douglas confirmou o funcionamento da gravação no Sheets, do alerta interno de prioridade alta e dos workflows no n8n. A exportação/versionamento dos JSON permanece pendente de comprovação no repositório.
+
+A árvore consultada do repositório principal não contém exportações JSON dos workflows; em particular, o arquivo de chatbot citado em instruções antigas não foi localizado no caminho indicado. Isso não significa que o chatbot não exista ou não funcione: a execução relatada confirma o uso do chatbot, mas a reprodução do workflow a partir do Git ainda depende da exportação sanitizada.
 
 ---
 

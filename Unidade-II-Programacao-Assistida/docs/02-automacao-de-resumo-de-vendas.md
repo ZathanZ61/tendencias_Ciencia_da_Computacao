@@ -1,3 +1,4 @@
+# Programação Assistida e Automação com IA — Resumo de vendas
 
 ## 1. Problema
 Automatizar o processamento de um lote de valores de vendas para gerar um resumo rápido com total, média, maior venda e menor venda, evitando cálculos manuais repetitivos sujeitos a erro de digitação ou soma.

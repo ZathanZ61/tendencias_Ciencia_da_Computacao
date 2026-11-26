@@ -12,7 +12,7 @@ A solução utiliza Gemini como tecnologia conversacional e consulta os registro
 - número do protocolo;
 - e-mail utilizado na abertura do chamado.
 
-A combinação desses dados funciona como uma verificação básica para localizar o registro correto. Ela não deve ser considerada, isoladamente, um mecanismo completo de autenticação para acesso a informações sensíveis.
+A interface envia protocolo, e-mail, mensagem e identificador de sessão ao webhook do chatbot. Conforme a arquitetura documentada, o fluxo n8n pesquisa o registro no Google Sheets e compara o e-mail informado com o e-mail associado ao protocolo antes de encaminhar os dados daquele chamado ao Gemini. Essa combinação funciona como uma verificação básica, mas não deve ser considerada, isoladamente, um mecanismo completo de autenticação para acesso a informações sensíveis.
 
 ## 3. Requisitos funcionais
 
@@ -25,6 +25,8 @@ A combinação desses dados funciona como uma verificação básica para localiz
 | RF05 | Solicitar esclarecimentos quando os dados forem insuficientes. |
 | RF06 | Permitir o registro de informações adicionais quando o fluxo estiver configurado para isso. |
 | RF07 | Informar quando não localizar o protocolo ou quando ocorrer falha na consulta. |
+| RF08 | Manter o contexto da conversa por identificador de sessão, conforme a memória configurada no fluxo. |
+| RF09 | Registrar informações adicionais do solicitante no campo previsto, somente quando a gravação for concluída. |
 
 ## 4. Requisitos não funcionais
 
@@ -42,7 +44,7 @@ A combinação desses dados funciona como uma verificação básica para localiz
 Usuário: “Quero consultar meu chamado.”  
 Chatbot: “Informe o protocolo e o e-mail utilizado na abertura para localizar o registro.”
 
-Após localizar o chamado, o chatbot deve apresentar somente o andamento que estiver registrado.
+Após localizar o chamado e validar a correspondência do e-mail, o assistente Gemini recebe os dados daquele registro e deve apresentar somente o andamento que estiver registrado.
 
 **Protocolo não localizado**
 
@@ -60,7 +62,8 @@ As mensagens são exemplos de comportamento esperado, não transcrições de tes
 
 ## 6. Limitações
 
-- A resposta depende da qualidade e da atualização dos dados registrados.
+- A resposta depende da qualidade e da atualização dos dados registrados. O status, responsável e última atualização dependem de manutenção dos campos pela equipe.
+- O modelo não consulta diretamente a planilha: a busca, a verificação do e-mail e a gravação de informações adicionais são responsabilidades do workflow n8n.
 - O chatbot não deve presumir que um chamado foi resolvido apenas porque o usuário descreveu uma solução.
 - Se o status for atualizado manualmente na planilha, a consulta refletirá o registro disponível no momento da leitura.
 - Modelos generativos podem interpretar incorretamente perguntas ou produzir conteúdo não solicitado.
@@ -77,6 +80,6 @@ As mensagens são exemplos de comportamento esperado, não transcrições de tes
 7. Verificar se o chatbot evita revelar dados de outro chamado.
 8. Enviar informação adicional e conferir se ela foi registrada corretamente.
 
-Os cenários devem ser executados no ambiente real de integração antes de serem marcados como aprovados.
+Em 26/11/2026 foi relatado um teste real de consulta: após abrir um chamado de instabilidade de internet, o usuário perguntou ao chatbot qual era o andamento e recebeu o status **Aberto**. Os demais cenários acima continuam sem evidência de execução e devem ser testados antes de serem marcados como aprovados.
 
 **Implementação original:** [repositório colaborativo no GitHub](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)

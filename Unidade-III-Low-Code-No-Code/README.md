@@ -91,7 +91,7 @@ Na evolução, a solução passou a contemplar:
 
 Esses recursos são apresentados como evolução do projeto na Unidade IV, e não como funcionalidades que já estavam concluídas na etapa inicial da Unidade III.
 
-**Demonstração da versão evoluída:** https://sistema-de-triagem-eosin.vercel.app/
+**Demonstração da versão evoluída:** https://sistema-de-triagem-automatica.vercel.app/
 
 ## 9. Documentos desta unidade
 
@@ -100,6 +100,7 @@ Esses recursos são apresentados como evolução do projeto na Unidade IV, e nã
 - [03 — Integração e arquitetura](docs/03-integracao-e-arquitetura.md)
 - [04 — Testes e segurança](docs/04-testes-e-seguranca.md)
 - [05 — Análise crítica](docs/05-analise-critica.md)
+- [06 — Análise Low Code/No Code](docs/06-analise-low-code-no-code.md)
 
 ---
 
