@@ -19,16 +19,16 @@ A aplicação reúne dois caminhos principais:
 ### Abertura e triagem
 1. O usuário preenche o formulário web.
 2. Os dados são validados e um protocolo é gerado.
-3. O fluxo de automação utiliza IA para sugerir classificação, prioridade, resumo e orientação.
-4. O chamado é registrado no Google Sheets.
-5. O Gmail envia uma confirmação ao solicitante e pode emitir alerta para chamados de prioridade alta.
+3. O n8n valida e normaliza os dados, gera o protocolo e encaminha a descrição ao componente de IA (Basic LLM Chain com modelo OpenAI e saída estruturada) para sugerir categoria, prioridade, resumo e orientação inicial.
+4. Se a IA falhar ou produzir uma saída inválida, o fluxo prevê valores de fallback; em seguida, o chamado é encaminhado ao Google Sheets.
+5. O Gmail envia uma confirmação ao solicitante e o fluxo prevê uma ramificação de alerta para chamados de prioridade alta.
 
 ### Consulta pelo chatbot
 1. O usuário acessa o chatbot.
 2. Informa protocolo e e-mail.
-3. O chatbot utiliza Gemini para interpretar a solicitação e consultar os dados disponíveis.
-4. A resposta deve refletir o registro encontrado.
-5. O fluxo pode registrar informações adicionais enviadas pelo usuário.
+3. O webhook do n8n pesquisa o chamado no Google Sheets e confere se o e-mail informado corresponde ao registro.
+4. Somente após essa verificação, os dados do chamado são encaminhados ao assistente Gemini, que interpreta a pergunta e responde com base no registro.
+5. O fluxo pode registrar informações adicionais enviadas pelo usuário; o assistente não altera status, prioridade ou responsável.
 
 ## 4. Arquitetura tecnológica
 
@@ -37,7 +37,7 @@ A aplicação reúne dois caminhos principais:
 | Interface web | HTML, CSS e JavaScript | Formulário e interação com o usuário |
 | Automação | n8n Cloud | Orquestração dos fluxos e integrações |
 | IA para triagem | OpenAI | Apoio à interpretação e classificação |
-| Chatbot | Gemini | Conversação e consulta de chamados |
+| Chatbot | Gemini | Conversação sobre os dados do chamado previamente localizado e validado pelo n8n |
 | Armazenamento | Google Sheets | Registro dos chamados |
 | Notificações | Gmail | Confirmações e alertas |
 | Hospedagem da interface | Vercel | Disponibilização da aplicação web |
@@ -50,13 +50,21 @@ A tabela descreve a arquitetura registrada no projeto. A execução de cada inte
 flowchart TD
     U[Solicitante] --> WEB[Interface web]
     WEB --> N8N[Fluxo de abertura no n8n]
-    N8N --> IA[OpenAI: sugestão de triagem]
-    IA --> SHEETS[Google Sheets]
-    N8N --> MAIL[Gmail: confirmação e alerta]
-    U --> BOT[Chatbot]
-    BOT --> GEM[Gemini]
-    GEM --> SHEETS
-    SHEETS --> BOT
+    N8N --> IA[OpenAI: sugestão estruturada]
+    IA --> FB[Fallback se necessário]
+    FB --> SHEETS[Google Sheets: registro]
+    SHEETS --> MAIL[Gmail: confirmação]
+    MAIL --> ALERTA{Prioridade Alta?}
+    ALERTA -->|Sim| EQUIPE[Alerta à equipe]
+    ALERTA -->|Não| RESP[Resposta ao formulário]
+    EQUIPE --> RESP
+    U --> BOT[Chat na interface]
+    BOT --> BUSCA[n8n: busca por protocolo]
+    BUSCA --> CONFERE[Confere e-mail do registro]
+    CONFERE -->|Correspondente| GEM[Gemini: resposta com dados do chamado]
+    CONFERE -->|Divergente| NEGADO[Resposta controlada]
+    GEM --> REGISTRO[Registro opcional de informação adicional]
+    REGISTRO --> BOT
     BOT --> U
 ```
 
@@ -71,16 +79,27 @@ flowchart TD
 
 ## 7. Demonstração
 
-- [Aplicação publicada na Vercel](https://sistema-de-triagem-eosin.vercel.app/)
+- [Aplicação publicada na Vercel](https://sistema-de-triagem-automatica.vercel.app/)
 - [Repositório original do projeto colaborativo](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)
 
-A demonstração é o endereço de publicação conhecido do projeto. A disponibilidade e o comportamento atual precisam ser conferidos no momento da apresentação.
+Este é o endereço confirmado pelo responsável como a versão testada e documentada em 26/11/2026. A disponibilidade deve ser conferida novamente no momento da apresentação.
 
-## 8. Divisão de responsabilidades e autoria
+## 8. Resultados de testes relatados
+
+Em 26/11/2026 foram relatadas duas execuções na aplicação publicada:
+
+| Execução | Resultado observado | Evidência relatada |
+|---|---|---|
+| Abertura sobre falha na saída de produtos do sistema de coleta | Categoria Software; prioridade Média; resumo e sugestão inicial exibidos; protocolo gerado. | Confirmação apresentada pela página. |
+| Abertura sobre instabilidade/queda de internet em todo o setor | Categoria Rede/Internet; prioridade Alta; protocolo `CH-20261126-VCTH`; sugestão inicial exibida. | O chatbot respondeu status `Aberto` e o usuário confirmou o recebimento do e-mail de confirmação. |
+
+**Limites da evidência:** a gravação dos chamados no Google Sheets, o alerta interno de prioridade alta e o estado ativo dos workflows no painel n8n não foram verificados independentemente. Outros cenários de teste continuam pendentes. O registro detalhado está na [matriz de casos de teste da contribuição ao repositório colaborativo](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder/blob/docs/auditoria-testes-seguranca/docs/casos-de-teste.md).
+
+## 9. Divisão de responsabilidades e autoria
 
 O projeto é colaborativo. O repositório de Douglas contém a implementação original e é o local em que o desenvolvimento e as atualizações técnicas continuam. Esta documentação acadêmica organiza a apresentação da Unidade IV no repositório pessoal de Nathan e referencia o trabalho conjunto, sem reivindicar autoria exclusiva.
 
-## 9. Roteiro curto para apresentação
+## 10. Roteiro curto para apresentação
 
 1. Apresentar o problema: dificuldade de organizar e acompanhar chamados de TI.
 2. Mostrar a interface de abertura e explicar a geração do protocolo.
