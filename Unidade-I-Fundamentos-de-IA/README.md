@@ -10,9 +10,8 @@ Esta unidade reúne atividades introdutórias sobre Inteligência Artificial, id
 
 ## Material complementar
 
-- [Videoaula — Fundamentos de IA e Prompt](https://www.mediafire.com/file/qsz8azrv2bnkily/Fundamentos_de_IA_e_Prompt.mp4/file) — vídeo produzido com apoio do NotebookLM, utilizando um PDF de apoio elaborado com auxílio de IA.
-- [Documentação da produção da videoaula](docs/producao-da-videoaula.md).
-
-**Observação:** o PDF utilizado como fonte ainda precisa ser enviado ao repositório para ficar disponível junto à videoaula.
+- [PDF — Fundamentos de IA e Engenharia de Prompt](docs/Unidade_I_Fundamentos_de_IA_e_Engenharia_de_Prompt.pdf) — material de apoio utilizado como fonte no NotebookLM.
+- [Videoaula — Fundamentos de IA e Prompt](https://www.mediafire.com/file/qsz8azrv2bnkily/Fundamentos_de_IA_e_Prompt.mp4/file) — vídeo produzido com apoio do NotebookLM a partir do PDF.
+- [Documentação da produção da videoaula](docs/producao-da-videoaula.md) — registra o processo e a transparência sobre o uso de IA.
 
 Todos os trabalhos desta unidade estão reunidos nesta pasta. Os arquivos históricos duplicados foram consolidados sem eliminar o conteúdo exclusivo.
