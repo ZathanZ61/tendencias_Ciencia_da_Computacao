@@ -61,11 +61,15 @@ A automação deve ampliar a capacidade de atendimento, não retirar do usuário
 
 A responsabilidade pelo processo não deve ser transferida integralmente ao modelo. A equipe que utiliza a ferramenta precisa supervisionar resultados, corrigir erros e avaliar impactos. A IA não conhece todo o contexto institucional e não deve tomar decisões sensíveis sem supervisão.
 
-## 7. Reflexão crítica
+## 7. Reflexão crítica aplicada aos testes do projeto
+
+Nas execuções relatadas em 26/11/2026, o sistema classificou um chamado sobre a saída de produtos como Software / Média e um relato de instabilidade de internet que afetava todo o setor como Rede/Internet / Alta. Os exemplos mostram como a classificação pode ajudar a organizar demandas distintas, mas dois casos não são suficientes para medir precisão, imparcialidade ou desempenho geral do modelo.
+
+A prioridade sugerida tem efeito operacional: pode influenciar a ordem de atendimento e acionar uma notificação interna. Por isso, uma classificação incorreta pode atrasar um problema importante ou gerar alertas desnecessários. A equipe deve revisar a prioridade, considerar o impacto real e poder corrigir a sugestão da IA.
 
 O principal benefício da IA no projeto é organizar informações e apoiar tarefas repetitivas. Entretanto, velocidade não é sinônimo de justiça ou precisão. Um sistema que classifica rapidamente, mas não permite correção, pode apenas automatizar erros que antes seriam percebidos por uma pessoa.
 
-Por isso, a solução deve combinar automação, critérios transparentes, revisão humana, proteção de dados e monitoramento contínuo. O sucesso não deve ser medido somente pela quantidade de chamados processados, mas também pela qualidade das classificações e pela equidade no atendimento.
+Por isso, a solução deve combinar automação, critérios transparentes, revisão humana, proteção de dados e monitoramento contínuo. O sucesso não deve ser medido somente pela quantidade de chamados processados, mas também pela qualidade das classificações e pela equidade no atendimento. Os testes com descrições equivalentes em linguagem formal, informal, regional e com erros de digitação ainda precisam ser executados para avaliar possíveis diferenças.
 
 ## 8. Referências para aprofundamento
 
