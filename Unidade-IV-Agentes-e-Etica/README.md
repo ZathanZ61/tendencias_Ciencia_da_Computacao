@@ -75,7 +75,7 @@ A IA oferece sugestões e apoio operacional. A classificação automática não 
 
 A solução depende de serviços externos, disponibilidade de internet, credenciais e configuração correta das integrações. Modelos generativos podem produzir classificações incorretas, interpretações incompletas ou respostas inconsistentes. Dados pessoais e informações potencialmente sensíveis precisam de proteção, acesso restrito e finalidade definida.
 
-A documentação dos testes deve refletir somente execuções comprovadas. Em 26/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com consulta de status Aberto pelo chatbot e recebimento do e-mail de confirmação. Após essas execuções, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa confirmação foi repassada por Nathan e não equivale a uma inspeção independente desta revisão. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no Git. Os demais cenários permanecem pendentes.
+A documentação dos testes deve refletir somente execuções comprovadas. Em 27/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com consulta de status Aberto pelo chatbot e recebimento do e-mail de confirmação. Após essas execuções, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa confirmação foi repassada por Nathan e não equivale a uma inspeção independente desta revisão. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no Git. Os demais cenários permanecem pendentes.
 
 ## 8. Documentos
 
@@ -91,7 +91,7 @@ A documentação dos testes deve refletir somente execuções comprovadas. Em 26
 
 A aplicação de referência está publicada em [sistema-de-triagem-automatica.vercel.app](https://sistema-de-triagem-automatica.vercel.app/). O repositório de Douglas permanece como fonte do código. A documentação complementar das duas execuções e da auditoria está registrada na [Pull Request #2](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder/pull/2), ainda sujeita à revisão do mantenedor.
 
-**Resultados relatados em 26/11/2026:**
+**Resultados relatados em 27/11/2026:**
 - Abertura de chamado sobre saída de produtos no sistema de coleta: Software / Média, confirmação na página e sugestão inicial.
 - Abertura de chamado sobre instabilidade de internet no setor: Rede/Internet / Alta; chatbot respondeu status Aberto; e-mail de confirmação recebido.
 - Douglas confirmou o funcionamento da gravação no Sheets, do alerta interno de prioridade alta e dos workflows no n8n. A exportação/versionamento dos JSON permanece pendente de comprovação no repositório.

@@ -82,11 +82,11 @@ flowchart TD
 - [Aplicação publicada na Vercel](https://sistema-de-triagem-automatica.vercel.app/)
 - [Repositório original do projeto colaborativo](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)
 
-Este é o endereço confirmado pelo responsável como a versão testada e documentada em 26/11/2026. A disponibilidade deve ser conferida novamente no momento da apresentação.
+Este é o endereço confirmado pelo responsável como a versão testada e documentada em 27/11/2026. A disponibilidade deve ser conferida novamente no momento da apresentação.
 
 ## 8. Resultados de testes relatados
 
-Em 26/11/2026 foram relatadas duas execuções na aplicação publicada:
+Em 27/11/2026 foram relatadas duas execuções na aplicação publicada:
 
 | Execução | Resultado observado | Evidência relatada |
 |---|---|---|
