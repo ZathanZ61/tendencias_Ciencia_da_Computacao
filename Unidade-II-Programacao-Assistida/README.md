@@ -29,3 +29,7 @@ A IA é utilizada como ferramenta de apoio. O estudante continua responsável po
 - Os testes da calculadora e do resumo de vendas foram executados localmente e estão registrados, com entrada e saída, nos documentos 01 e 02.
 - O estudo de caso do documento 03 é fictício e está identificado como tal; não representa um incidente real.
 - Nenhum dado pessoal real foi utilizado nos exemplos.
+
+## Produção
+
+Material organizado e revisado com apoio de ferramentas de IA, com verificação manual do conteúdo. Ver [Uso de ferramentas de IA](../docs/uso-de-ferramentas-de-ia.md).

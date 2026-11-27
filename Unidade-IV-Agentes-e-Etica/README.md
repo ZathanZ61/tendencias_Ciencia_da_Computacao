@@ -102,3 +102,7 @@ A árvore consultada do repositório principal não contém exportações JSON d
 ---
 
 *Documentação acadêmica da Unidade IV. O código-fonte e a evolução da aplicação permanecem no repositório colaborativo indicado acima.*
+
+## Produção
+
+Material organizado e revisado com apoio de ferramentas de IA, com verificação manual do conteúdo. Ver [Uso de ferramentas de IA](../docs/uso-de-ferramentas-de-ia.md).

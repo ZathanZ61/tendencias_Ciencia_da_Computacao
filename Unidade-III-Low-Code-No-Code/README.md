@@ -108,3 +108,7 @@ O escopo desta etapa termina na organização e na classificação inicial das s
 ---
 
 *Documentação acadêmica da etapa inicial do projeto de triagem de chamados, organizada conforme as orientações da Unidade III.*
+
+## Produção
+
+Material organizado e revisado com apoio de ferramentas de IA, com verificação manual do conteúdo. Ver [Uso de ferramentas de IA](../docs/uso-de-ferramentas-de-ia.md).

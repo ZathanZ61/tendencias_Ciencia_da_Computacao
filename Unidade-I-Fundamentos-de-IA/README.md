@@ -15,3 +15,7 @@ Esta unidade reúne atividades introdutórias sobre Inteligência Artificial, id
 - [Documentação da produção da videoaula](docs/producao-da-videoaula.md) — registra o processo e a transparência sobre o uso de IA.
 
 Todos os trabalhos desta unidade estão reunidos nesta pasta. Os arquivos históricos duplicados foram consolidados sem eliminar o conteúdo exclusivo.
+
+## Produção
+
+Material organizado e revisado com apoio de ferramentas de IA, com verificação manual do conteúdo. Ver [Uso de ferramentas de IA](../docs/uso-de-ferramentas-de-ia.md).
