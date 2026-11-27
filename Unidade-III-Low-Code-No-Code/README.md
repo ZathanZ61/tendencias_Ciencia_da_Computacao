@@ -109,6 +109,7 @@ Esses recursos são apresentados como evolução do projeto na Unidade IV, e nã
 - [04 — Testes e segurança](docs/04-testes-e-seguranca.md)
 - [05 — Análise crítica](docs/05-analise-critica.md)
 - [06 — Análise Low Code/No Code](docs/06-analise-low-code-no-code.md)
+- [PDF — Low Code, No Code e Vibecode](docs/Unidade_III_Low_Code_No_Code_e_Vibecode.pdf) — material de estudo com critérios de escolha de plataforma, arquitetura em camadas, riscos e referências.
 
 ---
 
