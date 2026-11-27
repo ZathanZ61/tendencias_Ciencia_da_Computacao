@@ -33,6 +33,10 @@ A disciplina aborda conceitos e aplicações atuais de Inteligência Artificial,
 - Resultados de testes devem distinguir o que foi executado, o que foi confirmado por terceiros e o que ainda está pendente.
 - Cada unidade deve indicar a qual semana do plano de aulas cada documento corresponde.
 
+## Uso de ferramentas de IA
+
+O trabalho usa ferramentas de IA como apoio, com revisão e verificação manual. As ferramentas, o papel de cada uma e os limites estão em [Uso de ferramentas de IA](docs/uso-de-ferramentas-de-ia.md).
+
 ## Estrutura e convenções
 
 Consulte [Estrutura do repositório](docs/estrutura-do-repositorio.md).
