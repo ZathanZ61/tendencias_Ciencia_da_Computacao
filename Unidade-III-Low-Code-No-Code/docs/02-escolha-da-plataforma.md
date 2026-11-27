@@ -16,6 +16,22 @@ O **n8n** foi utilizado como ferramenta de automação visual. Sua interface per
 
 A escolha está alinhada ao objetivo da Unidade III: compreender, na prática, como uma plataforma Low Code pode apoiar a construção de uma solução.
 
+## Comparação das plataformas avaliadas (08/10)
+
+O quadro abaixo registra a comparação entre plataformas Low Code/No Code feita durante a escolha da ferramenta para o desafio de triagem. É um registro de avaliação, não um teste completo de cada plataforma.
+
+| Critério | n8n | Make | Bubble |
+|---|---|---|---|
+| Tipo de ferramenta | Automação de fluxos | Automação de fluxos | Construção de aplicativos web |
+| Forma de modelagem | Nós conectados, com condições e código opcional | Cenários visuais com módulos | Editor visual de telas, banco e lógica |
+| Uso de IA | Nós de modelo de linguagem e agentes | Módulos de IA e chamadas HTTP | Chamadas a APIs de IA, com mais montagem manual |
+| Integrações | Grande catálogo, incluindo Google Sheets e Gmail | Grande catálogo de serviços populares | Integrações via API e plugins |
+| Curva de aprendizado | Média; exige entender fluxo e credenciais | Baixa para fluxos simples | Média; exige modelar telas e banco |
+| Custos e limites | Instância própria ou nuvem, com limite de execuções | Plano gratuito limitado por operações | Plano gratuito limitado por aplicação |
+| Aderência ao desafio | Alta: o problema é orquestrar etapas e integrações | Alta: mesma lógica de orquestração | Média: exigiria reconstruir a interface e o banco |
+
+O n8n foi escolhido porque o núcleo do problema é a orquestração de etapas — validação, classificação por IA, registro e notificação — e não a construção de telas. O Bubble foi considerado adequado para aplicativos com banco e interface próprios, cenário diferente do mini projeto desta etapa.
+
 ## Abordagem híbrida
 
 O projeto se relaciona a três abordagens:

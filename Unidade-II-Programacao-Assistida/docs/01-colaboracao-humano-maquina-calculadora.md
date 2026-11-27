@@ -1,7 +1,6 @@
 # Programação Assistida por IA — Colaboração Humano-Máquina
 
-Programação Assistida por Inteligência Artificial - O novo paradigma da colaboração Humano-Máquina
-.
+Programação Assistida por Inteligência Artificial — o novo paradigma da colaboração humano-máquina.
 
 
 ## Código inicial

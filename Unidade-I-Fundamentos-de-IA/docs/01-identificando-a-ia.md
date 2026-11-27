@@ -1,4 +1,6 @@
-# tendencias_Ciencia_da_Computacao
+# Identificando a IA
+
+## Registro inicial — comparação de prompts
 
 ### 1. Comparação Prática
 
@@ -20,7 +22,7 @@ A resposta gerada pelo **Prompt Estruturado** foi significativamente mais útil 
 
 ---
 
-# Atividade Prática: Identificando a IA
+## Atividade prática — identificando a IA
 
 **Objetivo:** Mapear a presença de Inteligência Artificial em tecnologias do cotidiano, analisando onde ela atua, os problemas que resolve, os dados utilizados, os benefícios e os riscos observáveis.
 

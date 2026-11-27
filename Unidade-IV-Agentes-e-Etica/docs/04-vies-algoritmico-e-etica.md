@@ -1,4 +1,4 @@
-# 03 — Viés algorítmico e responsabilidade social
+# 04 — Viés algorítmico e responsabilidade social
 
 ## 1. Introdução
 
@@ -63,7 +63,7 @@ A responsabilidade pelo processo não deve ser transferida integralmente ao mode
 
 ## 7. Reflexão crítica aplicada aos testes do projeto
 
-Nas execuções relatadas em 26/11/2026, o sistema classificou um chamado sobre a saída de produtos como Software / Média e um relato de instabilidade de internet que afetava todo o setor como Rede/Internet / Alta. Os exemplos mostram como a classificação pode ajudar a organizar demandas distintas, mas dois casos não são suficientes para medir precisão, imparcialidade ou desempenho geral do modelo.
+Nas execuções relatadas em 27/11/2026, o sistema classificou um chamado sobre a saída de produtos como Software / Média e um relato de instabilidade de internet que afetava todo o setor como Rede/Internet / Alta. Os exemplos mostram como a classificação pode ajudar a organizar demandas distintas, mas dois casos não são suficientes para medir precisão, imparcialidade ou desempenho geral do modelo.
 
 A prioridade sugerida tem efeito operacional: pode influenciar a ordem de atendimento e acionar uma notificação interna. Por isso, uma classificação incorreta pode atrasar um problema importante ou gerar alertas desnecessários. A equipe deve revisar a prioridade, considerar o impacto real e poder corrigir a sugestão da IA.
 

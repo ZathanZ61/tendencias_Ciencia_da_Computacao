@@ -187,4 +187,3 @@ Aceitar um texto bem escrito que tenha erro conceitual, suposição errada ou in
 3. Pedir um formato organizado (tópicos, tabela ou passo a passo) quando ajudar na leitura.
 4. Colocar limites claros para evitar respostas longas demais ou fora do escopo.
 5. Conferir o conteúdo antes de usar em qualquer projeto ou entrega.
-```[cite: 3]

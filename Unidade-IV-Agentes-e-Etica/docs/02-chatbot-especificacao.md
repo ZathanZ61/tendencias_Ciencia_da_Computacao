@@ -80,6 +80,6 @@ As mensagens são exemplos de comportamento esperado, não transcrições de tes
 7. Verificar se o chatbot evita revelar dados de outro chamado.
 8. Enviar informação adicional e conferir se ela foi registrada corretamente.
 
-Em 26/11/2026 foi relatado um teste real de consulta: após abrir um chamado de instabilidade de internet, o usuário perguntou ao chatbot qual era o andamento e recebeu o status **Aberto**. Os demais cenários acima continuam sem evidência de execução e devem ser testados antes de serem marcados como aprovados.
+Em 27/11/2026 foi relatado um teste real de consulta: após abrir um chamado de instabilidade de internet, o usuário perguntou ao chatbot qual era o andamento e recebeu o status **Aberto**. Os demais cenários acima continuam sem evidência de execução e devem ser testados antes de serem marcados como aprovados.
 
 **Implementação original:** [repositório colaborativo no GitHub](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)

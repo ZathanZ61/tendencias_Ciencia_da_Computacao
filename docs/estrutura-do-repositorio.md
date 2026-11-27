@@ -32,6 +32,7 @@
 6. Não registrar senhas, tokens, chaves de API, dados pessoais reais ou conteúdo sensível em exemplos.
 7. Diferenciar evidência de teste executado, confirmação repassada por integrante e hipótese/documentação planejada.
 8. Antes de remover ou renomear arquivos históricos, conferir conteúdo, links e histórico de commits.
+9. Manter, no README de cada unidade, a relação entre as semanas do plano de aulas e os documentos correspondentes.
 
 ## Critério de organização
 

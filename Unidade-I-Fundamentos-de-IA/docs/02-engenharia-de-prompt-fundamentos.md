@@ -168,7 +168,7 @@ O principal aprendizado foi compreender que a qualidade da resposta também depe
 https://github.com/ZathanZ61/tendencias_Ciencia_da_Computacao
 
 **Pasta da atividade:**  
-https://github.com/ZathanZ61/tendencias_Ciencia_da_Computacao/tree/main/Atividades/engenharia-de-prompt-fundamentos
+https://github.com/ZathanZ61/tendencias_Ciencia_da_Computacao/tree/main/Unidade-I-Fundamentos-de-IA/docs
 
 ---
 
