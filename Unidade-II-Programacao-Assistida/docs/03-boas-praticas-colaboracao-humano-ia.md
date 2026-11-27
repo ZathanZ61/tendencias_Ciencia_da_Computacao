@@ -1,7 +1,6 @@
 # Boas práticas na colaboração humano-IA
 
 **Disciplina:** Tendências em Ciência da Computação
-**Semana do plano de aulas:** 01/10 — Boas práticas na colaboração humano-IA
 **Integrante:** Nathan Ferreira dos Santos
 
 ## 1. Objetivo

@@ -18,7 +18,7 @@ A escolha está alinhada ao objetivo da Unidade III: compreender, na prática, c
 
 ## Comparação das plataformas avaliadas (08/10)
 
-A semana de 08/10 previa demonstração de plataformas Low Code/No Code. O quadro abaixo registra a comparação feita durante a escolha da ferramenta para o desafio de triagem. É um registro de avaliação, não um teste completo de cada plataforma.
+O quadro abaixo registra a comparação entre plataformas Low Code/No Code feita durante a escolha da ferramenta para o desafio de triagem. É um registro de avaliação, não um teste completo de cada plataforma.
 
 | Critério | n8n | Make | Bubble |
 |---|---|---|---|

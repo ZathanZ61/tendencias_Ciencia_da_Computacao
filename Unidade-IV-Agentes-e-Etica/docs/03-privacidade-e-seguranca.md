@@ -1,7 +1,6 @@
 # 03 — Privacidade e segurança: estudo de caso com dados sensíveis
 
 **Disciplina:** Tendências em Ciência da Computação
-**Semana do plano de aulas:** 12/11 — Privacidade e segurança: estudo de caso sobre dados sensíveis
 **Integrante:** Nathan Ferreira dos Santos
 **Projeto:** Sistema de Triagem Automática de Chamados — trabalho conjunto com Douglas
 

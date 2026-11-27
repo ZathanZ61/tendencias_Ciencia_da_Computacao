@@ -1,7 +1,6 @@
 # 07 — Reflexão sobre os aprendizados (A1)
 
 **Disciplina:** Tendências em Ciência da Computação
-**Semana do plano de aulas:** 26/11 — Avaliação A1 e reflexão sobre aprendizados
 **Integrante:** Nathan Ferreira dos Santos
 
 ## 1. O que mudou na forma de usar IA

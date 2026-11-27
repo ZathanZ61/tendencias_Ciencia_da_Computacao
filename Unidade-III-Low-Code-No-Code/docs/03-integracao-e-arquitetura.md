@@ -30,7 +30,7 @@ O diagrama representa a ideia e o escopo didático da etapa inicial. Não é uma
 
 ## Exercício de aplicação híbrida (22/10)
 
-A semana de 22/10 previa um exercício prático de criação de aplicação híbrida. A proposta foi montada com três camadas:
+O exercício de criação de aplicação híbrida foi montado com três camadas:
 
 | Camada | Abordagem | O que foi feito |
 |---|---|---|
