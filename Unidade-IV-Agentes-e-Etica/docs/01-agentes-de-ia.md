@@ -71,6 +71,6 @@ A equipe de suporte continua responsável por avaliar a solicitação, confirmar
 
 ## 6. Evidências e estado de validação
 
-Em 27/11/2026, o usuário relatou uma execução em que o chatbot respondeu à pergunta sobre o andamento do chamado com o status **Aberto**. Essa evidência confirma uma interação funcional relatada, mas não comprova todos os cenários do assistente, a segurança contra consultas indevidas ou o funcionamento de todos os nós. A arquitetura e as responsabilidades acima foram descritas com base nos recursos documentados do projeto colaborativo. Este documento não declara que todos os cenários foram executados ou aprovados.
+Não há execução comprovada do chatbot. O que existe é a especificação do assistente, descrita no documento 02. A arquitetura e as responsabilidades acima foram descritas com base nos recursos documentados do projeto colaborativo. Este documento não declara que todos os cenários foram executados ou aprovados.
 
 **Repositório de implementação:** [Sistema de Triagem Automática — Vibe Coder](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder)

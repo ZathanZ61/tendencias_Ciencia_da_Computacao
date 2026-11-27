@@ -18,7 +18,7 @@ No começo da disciplina, a pergunta era "o que a IA responde". Ao final, a perg
 
 ## 3. O que o projeto de triagem ensinou sobre validação
 
-A lição mais concreta veio da distinção entre o que está documentado e o que está comprovado. A arquitetura descreve classificação por IA, registro em planilha, notificação e chatbot. As execuções relatadas em 27/11/2026 comprovam parte disso: duas aberturas de chamado, uma consulta de status pelo chatbot e o recebimento do e-mail de confirmação. O restante — alerta interno, gravação na planilha, demais cenários da matriz — depende de confirmação de terceiro ou segue pendente.
+A lição mais concreta veio da distinção entre o que está documentado e o que está comprovado. A arquitetura descreve classificação por IA, registro em planilha, notificação e chatbot. As execuções relatadas em 27/11/2026 comprovam parte disso: duas aberturas de chamado e o recebimento do e-mail de confirmação. O restante — alerta interno, gravação na planilha, demais cenários da matriz — depende de confirmação de terceiro ou segue pendente.
 
 Documentar essa diferença foi mais trabalhoso do que escrever que "o sistema funciona", e é o que torna o registro confiável.
 

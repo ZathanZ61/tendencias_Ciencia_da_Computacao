@@ -38,13 +38,11 @@ Mesmo um protótipo simples exige cuidado com dados, credenciais, validação da
 
 ## Continuidade do trabalho
 
-A temática escolhida na Unidade III foi mantida na Unidade IV. O grupo utilizou a proposta inicial de triagem de chamados como base para desenvolver uma solução mais completa, com abertura de chamados, classificação assistida por IA, registro, notificações e chatbot para acompanhamento.
-
 Essa evolução demonstra que um protótipo inicial pode ser ampliado a partir de novos requisitos e integrações. As funcionalidades adicionais devem ser atribuídas à etapa posterior, preservando a distinção entre o escopo inicial e o sistema evoluído.
 
 ## Avaliação geral
 
-O mini projeto permitiu explorar, de forma prática, o uso de automação visual e IA em um problema de suporte técnico. A principal contribuição acadêmica foi compreender que ferramentas Low Code, No Code e Vibecode aceleram determinadas etapas, mas exigem planejamento, validação, revisão humana e atenção à segurança.
+A atividade permitiu explorar, de forma prática, o uso de automação visual e IA em um problema de suporte técnico. A principal contribuição acadêmica foi compreender que ferramentas Low Code, No Code e Vibecode aceleram determinadas etapas, mas exigem planejamento, validação, revisão humana e atenção à segurança.
 
 ---
 

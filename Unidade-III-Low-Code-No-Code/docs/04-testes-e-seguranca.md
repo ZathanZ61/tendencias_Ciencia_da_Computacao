@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Os testes do mini projeto devem verificar se o fluxo de triagem recebe informações adequadas, identifica entradas inválidas e apresenta um resultado coerente para análise inicial.
+Os testes da atividade devem verificar se o fluxo de triagem recebe informações adequadas, identifica entradas inválidas e apresenta um resultado coerente para análise inicial.
 
 ## Cenários recomendados para o protótipo inicial
 
@@ -26,11 +26,9 @@ Os testes do mini projeto devem verificar se o fluxo de triagem recebe informaç
 5. **Integrações:** prever falhas e evitar informar que uma operação foi concluída quando houver erro.
 6. **Acesso:** limitar o acesso às ferramentas e aos registros às pessoas autorizadas.
 
-## Testes na evolução da Unidade IV
+## Testes desta etapa
 
-A documentação da versão ampliada descreve validações mais específicas para a abertura de chamados e para o chatbot, incluindo conferência de protocolo e e-mail, fallback da classificação por IA e tratamento de indisponibilidade do Gemini.
-
-No material técnico consultado para a versão evoluída, apenas o cenário de prioridade alta com dados simulados estava registrado como aprovado; os demais cenários constavam como pendentes naquele registro. Isso não comprova o estado atual dos testes.
+A verificação se limita aos cenários descritos acima. Validações de protocolo, fallback da classificação por IA e tratamento de indisponibilidade do modelo não fazem parte desta entrega.
 
 ## Conclusão
 

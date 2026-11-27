@@ -2,7 +2,7 @@
 
 ## Critérios considerados
 
-A escolha da plataforma para o mini projeto considerou:
+A escolha da plataforma para a atividade considerou:
 - facilidade para estruturar visualmente as etapas;
 - possibilidade de integrar serviços;
 - suporte a condições e validação de dados;
@@ -30,7 +30,7 @@ O quadro abaixo registra a comparação entre plataformas Low Code/No Code feita
 | Custos e limites | Instância própria ou nuvem, com limite de execuções | Plano gratuito limitado por operações | Plano gratuito limitado por aplicação |
 | Aderência ao desafio | Alta: o problema é orquestrar etapas e integrações | Alta: mesma lógica de orquestração | Média: exigiria reconstruir a interface e o banco |
 
-O n8n foi escolhido porque o núcleo do problema é a orquestração de etapas — validação, classificação por IA, registro e notificação — e não a construção de telas. O Bubble foi considerado adequado para aplicativos com banco e interface próprios, cenário diferente do mini projeto desta etapa.
+O n8n foi escolhido porque o núcleo do problema é a orquestração de etapas — validação, classificação por IA, registro e notificação — e não a construção de telas. O Bubble foi considerado adequado para aplicativos com banco e interface próprios, cenário diferente desta atividade.
 
 ## Abordagem híbrida
 
@@ -44,11 +44,9 @@ O projeto se relaciona a três abordagens:
 
 A solução deve ser entendida como híbrida. A presença de uma interface construída com tecnologias web e de configurações específicas impede classificá-la integralmente como No Code.
 
-## Ferramentas na evolução
+## Ferramentas desta etapa
 
-Na versão ampliada da Unidade IV, a solução passou a documentar a integração de n8n, serviços de IA (OpenAI e Gemini), Google Sheets, Gmail, interface em HTML/CSS/JavaScript e publicação na Vercel.
-
-Essa relação descreve a versão evoluída. Não significa que todas essas integrações e funcionalidades já faziam parte do escopo inicial da Unidade III.
+A proposta desta etapa usa o n8n como orquestrador, um serviço de IA para a classificação inicial e uma planilha como registro. Interface própria, notificações e integrações adicionais não fazem parte desta entrega.
 
 ## Justificativa
 

@@ -10,7 +10,7 @@
 
 A Unidade IV aborda a aplicação de agentes de Inteligência Artificial, chatbots e ferramentas de conversação, além das limitações técnicas, dos vieses algorítmicos e da responsabilidade social no uso da IA.
 
-Para esta etapa, o grupo manteve o tema de triagem de chamados de suporte de TI iniciado como mini projeto na etapa anterior e trabalhou em uma versão ampliada: um sistema que recebe solicitações, utiliza IA como apoio à classificação inicial, registra informações e oferece um chatbot para consulta do andamento.
+A solução documentada nesta etapa é um sistema de triagem de chamados de suporte de TI: recebe solicitações, utiliza IA como apoio à classificação inicial e registra as informações do atendimento. O chatbot de acompanhamento aparece apenas como especificação: não foi implementado nem testado.
 
 A documentação desta pasta cobre as quatro semanas da unidade e a reflexão da A1: agentes e chatbot, privacidade e segurança, viés e responsabilidade social, projeto aplicado, validação e aprendizados.
 
@@ -67,7 +67,7 @@ A presença de uma tecnologia na arquitetura não significa, por si só, que tod
 4. A classificação sugerida é utilizada para organizar o registro do chamado.
 5. Os dados são registrados no Google Sheets.
 6. O Gmail envia a confirmação ao solicitante e o fluxo prevê uma ramificação de alerta para chamados classificados como prioridade Alta.
-7. No acompanhamento, o frontend envia protocolo, e-mail, mensagem e identificador de sessão ao webhook do chatbot. O fluxo n8n localiza o chamado no Google Sheets e confere o e-mail antes de encaminhar os dados daquele registro ao assistente Gemini. O chatbot pode registrar informações adicionais no campo previsto.
+7. O acompanhamento por chatbot está especificado, mas não faz parte do que foi implementado e testado. A especificação prevê o envio de protocolo, e-mail, mensagem e identificador de sessão ao webhook do chatbot.
 
 A IA oferece sugestões e apoio operacional. A classificação automática não deve ser tratada como decisão infalível nem substituir a avaliação de uma pessoa responsável.
 
@@ -75,7 +75,7 @@ A IA oferece sugestões e apoio operacional. A classificação automática não 
 
 A solução depende de serviços externos, disponibilidade de internet, credenciais e configuração correta das integrações. Modelos generativos podem produzir classificações incorretas, interpretações incompletas ou respostas inconsistentes. Dados pessoais e informações potencialmente sensíveis precisam de proteção, acesso restrito e finalidade definida.
 
-A documentação dos testes deve refletir somente execuções comprovadas. Em 27/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com consulta de status Aberto pelo chatbot e recebimento do e-mail de confirmação. Após essas execuções, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa confirmação foi repassada por Nathan e não equivale a uma inspeção independente desta revisão. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no Git. Os demais cenários permanecem pendentes.
+A documentação dos testes deve refletir somente execuções comprovadas. Em 27/11/2026 foram relatadas duas execuções na aplicação publicada: uma abertura classificada como Software/Média; e outra sobre instabilidade de internet, classificada como Rede/Internet/Alta, com recebimento do e-mail de confirmação. Após essas execuções, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa confirmação foi repassada por Nathan e não equivale a uma inspeção independente desta revisão. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no Git. Os demais cenários permanecem pendentes.
 
 ## 8. Documentos
 
@@ -94,10 +94,10 @@ A aplicação de referência está publicada em [sistema-de-triagem-automatica.v
 
 **Resultados relatados em 27/11/2026:**
 - Abertura de chamado sobre saída de produtos no sistema de coleta: Software / Média, confirmação na página e sugestão inicial.
-- Abertura de chamado sobre instabilidade de internet no setor: Rede/Internet / Alta; chatbot respondeu status Aberto; e-mail de confirmação recebido.
+- Abertura de chamado sobre instabilidade de internet no setor: Rede/Internet / Alta; e-mail de confirmação recebido.
 - Douglas confirmou o funcionamento da gravação no Sheets, do alerta interno de prioridade alta e dos workflows no n8n. A exportação/versionamento dos JSON permanece pendente de comprovação no repositório.
 
-A árvore consultada do repositório principal não contém exportações JSON dos workflows; em particular, o arquivo de chatbot citado em instruções antigas não foi localizado no caminho indicado. Isso não significa que o chatbot não exista ou não funcione: a execução relatada confirma o uso do chatbot, mas a reprodução do workflow a partir do Git ainda depende da exportação sanitizada.
+A árvore consultada do repositório principal não contém exportações JSON dos workflows. A reprodução do fluxo a partir do Git depende dessa exportação sanitizada.
 
 ---
 

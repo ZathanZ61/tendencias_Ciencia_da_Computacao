@@ -14,7 +14,7 @@ Este documento diferencia funcionalidades descritas na arquitetura de testes efe
 | T02 | Enviar formulário com campos obrigatórios vazios | Impedir envio ou informar campos ausentes | A comprovar em execução |
 | T03 | Solicitação classificada como prioridade alta | Registrar a sugestão e disparar alerta conforme configuração | Classificação Rede/Internet / Alta em T13; Douglas confirmou ao responsável pelo registro que o alerta interno está funcionando. |
 | T04 | IA indisponível | Tratar falha sem inventar classificação | A comprovar em execução |
-| T05 | Consultar protocolo e e-mail correspondentes | Exibir dados do chamado localizado | Chatbot respondeu status Aberto em T13; demais consultas pendentes |
+| T05 | Consultar protocolo e e-mail correspondentes | Exibir dados do chamado localizado | Sem evidência de execução; chatbot não implementado nesta entrega |
 | T06 | Consultar protocolo inexistente | Informar que não encontrou o registro | A comprovar em execução |
 | T07 | Informar e-mail diferente | Não revelar dados do chamado | A comprovar em execução |
 | T08 | Consultar durante indisponibilidade do Gemini | Informar falha de forma controlada | A comprovar em execução |
@@ -29,7 +29,7 @@ Os protocolos exibidos nos e-mails de confirmação são `CH-20261126-P725` (Sof
 | ID | Entrada / cenário | Resultado observado | Situação |
 |---|---|---|---|
 | T12 | Chamado sobre impossibilidade de realizar a saída de produtos no sistema de coleta | A página confirmou a abertura, gerou o protocolo `CH-20261126-P725`, classificou como Software / Média e exibiu resumo e sugestão inicial. | Executado pelo usuário; página e e-mail de confirmação recebidos. |
-| T13 | Instabilidade ou queda de internet afetando todo o setor | A página confirmou a abertura; protocolo `CH-20261126-VCTH`; categoria Rede/Internet; prioridade Alta; sugestão inicial exibida. O chatbot respondeu que o status era Aberto. O usuário confirmou o recebimento do e-mail de confirmação. | Executado pelo usuário; página, chatbot e recebimento do e-mail confirmados por relato. |
+| T13 | Instabilidade ou queda de internet afetando todo o setor | A página confirmou a abertura; protocolo `CH-20261126-VCTH`; categoria Rede/Internet; prioridade Alta; sugestão inicial exibida. O usuário confirmou o recebimento do e-mail de confirmação. | Executado pelo usuário; página e recebimento do e-mail confirmados por relato. |
 
 **Confirmação posterior do mantenedor:** Nathan informou que Douglas confirmou o funcionamento da gravação no Google Sheets, do alerta interno de prioridade alta e dos workflows ativos no n8n. Esta documentação registra a confirmação do responsável pelo projeto, mas não representa uma inspeção independente realizada por esta revisão. A exportação e o versionamento dos workflows JSON continuam pendentes de comprovação no Git.
 

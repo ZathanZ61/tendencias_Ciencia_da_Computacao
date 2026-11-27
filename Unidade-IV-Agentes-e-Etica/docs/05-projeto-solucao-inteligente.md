@@ -91,7 +91,7 @@ Em 27/11/2026 foram relatadas duas execuções na aplicação publicada:
 | Execução | Resultado observado | Evidência relatada |
 |---|---|---|
 | Abertura sobre falha na saída de produtos do sistema de coleta | Categoria Software; prioridade Média; protocolo `CH-20261126-P725`; resumo e sugestão inicial exibidos. | Confirmação apresentada pela página e e-mail de confirmação recebido. |
-| Abertura sobre instabilidade/queda de internet em todo o setor | Categoria Rede/Internet; prioridade Alta; protocolo `CH-20261126-VCTH`; sugestão inicial exibida. | O chatbot respondeu status `Aberto` e o usuário confirmou o recebimento do e-mail de confirmação. |
+| Abertura sobre instabilidade/queda de internet em todo o setor | Categoria Rede/Internet; prioridade Alta; protocolo `CH-20261126-VCTH`; sugestão inicial exibida. | O usuário confirmou o recebimento do e-mail de confirmação. |
 
 **Confirmação do mantenedor:** após os testes relatados, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa informação é uma confirmação do mantenedor repassada por Nathan, não uma inspeção independente desta documentação. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no repositório. Outros cenários de teste continuam pendentes. O registro detalhado está na [matriz de casos de teste da contribuição ao repositório colaborativo](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder/blob/docs/auditoria-testes-seguranca/docs/casos-de-teste.md).
 
@@ -105,6 +105,6 @@ O projeto é colaborativo. O repositório de Douglas contém a implementação o
 2. Mostrar a interface de abertura e explicar a geração do protocolo.
 3. Explicar como a IA sugere categoria, prioridade e resumo.
 4. Mostrar como os dados são registrados e como ocorrem as notificações.
-5. Demonstrar o chatbot e explicar a consulta por protocolo e e-mail.
+5. Apresentar a especificação do chatbot e explicar por que ela não foi implementada nesta etapa.
 6. Apresentar limitações: erros da IA, dependência de integrações e atualização dos registros.
 7. Concluir destacando a supervisão humana, a privacidade e a responsabilidade no uso da IA.

@@ -7,11 +7,11 @@
 
 ## 1. Apresentação
 
-A Unidade III propôs desenvolver um mini projeto funcional utilizando abordagens Low Code, No Code e Vibecode, com apoio de Inteligência Artificial. O desafio escolhido pelo grupo foi a **triagem de chamados de suporte de Tecnologia da Informação (TI)**.
+A Unidade III propôs uma atividade prática de desenvolvimento com abordagens Low Code, No Code e Vibecode, com apoio de Inteligência Artificial. O tema escolhido pelo grupo foi a **triagem de chamados de suporte de Tecnologia da Informação (TI)**.
 
-A ideia começou como um protótipo para organizar solicitações de suporte: receber as informações do usuário, estruturar o chamado e apoiar sua classificação inicial. O trabalho serviu de ponto de partida para uma versão mais completa desenvolvida posteriormente na Unidade IV.
+A proposta foi organizar solicitações de suporte: receber as informações do usuário, estruturar o chamado e apoiar sua classificação inicial.
 
-Esta documentação registra a proposta e os conceitos da etapa inicial. Ela não deve ser confundida com todas as funcionalidades que foram acrescentadas durante a evolução do projeto.
+Esta documentação registra apenas a proposta desta etapa e os conceitos estudados.
 
 ## 2. Problema e objetivo
 
@@ -26,11 +26,11 @@ Solicitações de suporte técnico podem chegar de maneira desorganizada, dificu
 - Conhecer a integração entre ferramentas e serviços.
 - Avaliar vantagens, limitações e cuidados de segurança.
 
-## 3. Escopo do mini projeto — Unidade III
+## 3. Escopo da atividade — Unidade III
 
 O escopo desta etapa é a ideia inicial de triagem: receber uma solicitação, organizar suas informações e apoiar a classificação para facilitar o encaminhamento à equipe responsável.
 
-A proposta não deve ser descrita como se já incluísse todos os recursos da versão posterior. Funcionalidades como chatbot de acompanhamento, consulta de chamados por protocolo e e-mail, registro de informações adicionais pelo chat e fluxos mais completos de notificação pertencem à evolução documentada na Unidade IV.
+A entrega desta etapa se limita a receber a solicitação, organizar as informações e apoiar a classificação inicial. Consulta por protocolo, chatbot e notificações adicionais não fazem parte desta entrega.
 
 ## 4. Escolha da abordagem e das ferramentas
 
@@ -76,22 +76,16 @@ Os documentos desta pasta descrevem os critérios e cuidados identificados. Não
 2. **Possibilidade de erro da IA:** classificações automáticas precisam de validação humana.
 3. **Segurança e manutenção:** integrações e dados exigem controle de acesso, testes e acompanhamento.
 
-## 8. Evolução para a Unidade IV
+## 8. O que ficou fora desta etapa
 
-A temática de triagem de chamados foi mantida na Unidade IV. A partir da ideia inicial, o grupo desenvolveu uma versão mais completa, em colaboração com Douglas, ampliando o fluxo e acrescentando funcionalidades.
+Recursos que não fazem parte desta entrega:
 
-Na evolução, a solução passou a contemplar:
-- formulário web para abertura de chamados;
-- geração de protocolo e validação dos dados;
-- classificação assistida por IA;
-- registro em Google Sheets;
-- notificações por Gmail;
-- chatbot com Gemini para consulta do andamento mediante protocolo e e-mail;
-- registro de informações adicionais encaminhadas pelo solicitante.
+- consulta de chamados por protocolo;
+- chatbot de acompanhamento;
+- registro de informações adicionais pelo solicitante;
+- notificações além da confirmação de abertura.
 
-Esses recursos são apresentados como evolução do projeto na Unidade IV, e não como funcionalidades que já estavam concluídas na etapa inicial da Unidade III.
-
-**Demonstração da versão evoluída:** https://sistema-de-triagem-automatica.vercel.app/
+O escopo desta etapa termina na organização e na classificação inicial das solicitações.
 
 ## 9. Relação com o plano de aulas
 
@@ -99,7 +93,7 @@ Esses recursos são apresentados como evolução do projeto na Unidade IV, e nã
 |---|---|---|
 | 08/10 | Introdução ao Low Code/No Code e demonstração de plataformas | [02 — Escolha da plataforma](docs/02-escolha-da-plataforma.md), com comparação entre n8n, Make e Bubble |
 | 22/10 | Vibecode e integração leve: exercício de aplicação híbrida | [03 — Integração e arquitetura](docs/03-integracao-e-arquitetura.md), seção do exercício |
-| 29/10 | Limitações e potencialidades: discussão crítica e mini projeto | [01 — Definição do desafio](docs/01-definicao-do-desafio.md), [04 — Testes e segurança](docs/04-testes-e-seguranca.md), [05 — Análise crítica](docs/05-analise-critica.md) e [06 — Análise Low Code/No Code](docs/06-analise-low-code-no-code.md) |
+| 29/10 | Limitações e potencialidades: discussão crítica e atividade prática | [01 — Definição do desafio](docs/01-definicao-do-desafio.md), [04 — Testes e segurança](docs/04-testes-e-seguranca.md), [05 — Análise crítica](docs/05-analise-critica.md) e [06 — Análise Low Code/No Code](docs/06-analise-low-code-no-code.md) |
 
 ## 10. Documentos desta unidade
 
