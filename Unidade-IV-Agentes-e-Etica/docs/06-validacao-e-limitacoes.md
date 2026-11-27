@@ -24,11 +24,11 @@ Este documento diferencia funcionalidades descritas na arquitetura de testes efe
 
 ### Testes reais relatados em 27/11/2026
 
-O protocolo exibido no e-mail de confirmação é `CH-20261126-VCTH`.
+Os protocolos exibidos nos e-mails de confirmação são `CH-20261126-P725` (Software/Média) e `CH-20261126-VCTH` (Rede/Internet/Alta).
 
 | ID | Entrada / cenário | Resultado observado | Situação |
 |---|---|---|---|
-| T12 | Chamado sobre impossibilidade de realizar a saída de produtos no sistema de coleta | A página confirmou a abertura, gerou protocolo, classificou como Software / Média e exibiu resumo e sugestão inicial. | Executado pelo usuário; sucesso na página relatado. |
+| T12 | Chamado sobre impossibilidade de realizar a saída de produtos no sistema de coleta | A página confirmou a abertura, gerou o protocolo `CH-20261126-P725`, classificou como Software / Média e exibiu resumo e sugestão inicial. | Executado pelo usuário; página e e-mail de confirmação recebidos. |
 | T13 | Instabilidade ou queda de internet afetando todo o setor | A página confirmou a abertura; protocolo `CH-20261126-VCTH`; categoria Rede/Internet; prioridade Alta; sugestão inicial exibida. O chatbot respondeu que o status era Aberto. O usuário confirmou o recebimento do e-mail de confirmação. | Executado pelo usuário; página, chatbot e recebimento do e-mail confirmados por relato. |
 
 **Confirmação posterior do mantenedor:** Nathan informou que Douglas confirmou o funcionamento da gravação no Google Sheets, do alerta interno de prioridade alta e dos workflows ativos no n8n. Esta documentação registra a confirmação do responsável pelo projeto, mas não representa uma inspeção independente realizada por esta revisão. A exportação e o versionamento dos workflows JSON continuam pendentes de comprovação no Git.

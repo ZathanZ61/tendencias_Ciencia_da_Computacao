@@ -90,7 +90,7 @@ Em 27/11/2026 foram relatadas duas execuções na aplicação publicada:
 
 | Execução | Resultado observado | Evidência relatada |
 |---|---|---|
-| Abertura sobre falha na saída de produtos do sistema de coleta | Categoria Software; prioridade Média; resumo e sugestão inicial exibidos; protocolo gerado. | Confirmação apresentada pela página. |
+| Abertura sobre falha na saída de produtos do sistema de coleta | Categoria Software; prioridade Média; protocolo `CH-20261126-P725`; resumo e sugestão inicial exibidos. | Confirmação apresentada pela página e e-mail de confirmação recebido. |
 | Abertura sobre instabilidade/queda de internet em todo o setor | Categoria Rede/Internet; prioridade Alta; protocolo `CH-20261126-VCTH`; sugestão inicial exibida. | O chatbot respondeu status `Aberto` e o usuário confirmou o recebimento do e-mail de confirmação. |
 
 **Confirmação do mantenedor:** após os testes relatados, Douglas confirmou ao responsável pela documentação que a gravação no Google Sheets, o alerta interno de prioridade alta e os workflows no n8n estão funcionando. Essa informação é uma confirmação do mantenedor repassada por Nathan, não uma inspeção independente desta documentação. A exportação e o versionamento dos workflows JSON ainda precisam ser comprovados no repositório. Outros cenários de teste continuam pendentes. O registro detalhado está na [matriz de casos de teste da contribuição ao repositório colaborativo](https://github.com/DouglasSM13/Sistema-de-Triagem-automatica---Vibe-Coder/blob/docs/auditoria-testes-seguranca/docs/casos-de-teste.md).
