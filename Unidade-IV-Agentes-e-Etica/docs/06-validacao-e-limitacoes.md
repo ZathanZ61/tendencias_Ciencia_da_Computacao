@@ -24,6 +24,8 @@ Este documento diferencia funcionalidades descritas na arquitetura de testes efe
 
 ### Testes reais relatados em 27/11/2026
 
+O protocolo exibido no e-mail de confirmação é `CH-20261126-VCTH`.
+
 | ID | Entrada / cenário | Resultado observado | Situação |
 |---|---|---|---|
 | T12 | Chamado sobre impossibilidade de realizar a saída de produtos no sistema de coleta | A página confirmou a abertura, gerou protocolo, classificou como Software / Média e exibiu resumo e sugestão inicial. | Executado pelo usuário; sucesso na página relatado. |
