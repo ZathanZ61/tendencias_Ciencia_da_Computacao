@@ -93,7 +93,15 @@ Esses recursos são apresentados como evolução do projeto na Unidade IV, e nã
 
 **Demonstração da versão evoluída:** https://sistema-de-triagem-automatica.vercel.app/
 
-## 9. Documentos desta unidade
+## 9. Relação com o plano de aulas
+
+| Semana | Atividade prevista | Registro nesta pasta |
+|---|---|---|
+| 08/10 | Introdução ao Low Code/No Code e demonstração de plataformas | [02 — Escolha da plataforma](docs/02-escolha-da-plataforma.md), com comparação entre n8n, Make e Bubble |
+| 22/10 | Vibecode e integração leve: exercício de aplicação híbrida | [03 — Integração e arquitetura](docs/03-integracao-e-arquitetura.md), seção do exercício |
+| 29/10 | Limitações e potencialidades: discussão crítica e mini projeto | [01 — Definição do desafio](docs/01-definicao-do-desafio.md), [04 — Testes e segurança](docs/04-testes-e-seguranca.md), [05 — Análise crítica](docs/05-analise-critica.md) e [06 — Análise Low Code/No Code](docs/06-analise-low-code-no-code.md) |
+
+## 10. Documentos desta unidade
 
 - [01 — Definição do desafio](docs/01-definicao-do-desafio.md)
 - [02 — Escolha da plataforma](docs/02-escolha-da-plataforma.md)

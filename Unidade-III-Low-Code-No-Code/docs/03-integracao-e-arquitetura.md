@@ -28,6 +28,20 @@ flowchart TD
 
 O diagrama representa a ideia e o escopo didático da etapa inicial. Não é uma exportação literal de um workflow nem deve ser interpretado como descrição de todas as funcionalidades da versão posterior.
 
+## Exercício de aplicação híbrida (22/10)
+
+A semana de 22/10 previa um exercício prático de criação de aplicação híbrida. A proposta foi montada com três camadas:
+
+| Camada | Abordagem | O que foi feito |
+|---|---|---|
+| Interface | Código tradicional | Formulário web em HTML, CSS e JavaScript para receber os dados da solicitação |
+| Orquestração | Low Code | Fluxo no n8n para validar os dados, acionar a IA e encaminhar o registro |
+| Interpretação | IA | Chamada a modelo de linguagem para sugerir categoria, prioridade e resumo |
+
+A divisão mostra o que cada abordagem resolve melhor: a interface exige controle fino de validação e mensagens, enquanto a orquestração se beneficia da montagem visual e da troca de serviços sem reescrever código.
+
+**Limites do registro:** nesta etapa o exercício foi conduzido como montagem do fluxo e da interface, sem exportação versionada dos workflows nem captura de execução. O artefato verificável do projeto é a aplicação evoluída apresentada na Unidade IV; esta seção documenta a concepção do exercício, não um teste concluído.
+
 ## Papel das abordagens
 
 - **Low Code:** permite montar visualmente etapas, conexões e condições.
