@@ -11,11 +11,13 @@ Repositório acadêmico com atividades, estudos, experimentos e projetos desenvo
 | Unidade | Tema | Conteúdo | Situação |
 |---|---|---|---|
 | I | Fundamentos de IA e Engenharia de Prompt | [Acessar Unidade I](Unidade-I-Fundamentos-de-IA/README.md) | Concluída: três atividades, PDF de apoio e videoaula |
-| II | Programação assistida e colaboração humano-máquina | [Acessar Unidade II](Unidade-II-Programacao-Assistida/README.md) | Concluída: três atividades, com testes executados e registrados |
-| III | Low Code, No Code e Vibecode | [Acessar Unidade III](Unidade-III-Low-Code-No-Code/README.md) | Documentação completa; execução do protótipo não comprovada |
-| IV | Agentes de IA, chatbots e ética | [Acessar Unidade IV](Unidade-IV-Agentes-e-Etica/README.md) | Documentação completa; duas execuções relatadas e cenários pendentes |
+| II | Programação assistida e colaboração humano-máquina | [Acessar Unidade II](Unidade-II-Programacao-Assistida/README.md) | Concluída: três atividades, com testes executados e registrados, e PDF de apoio |
+| III | Low Code, No Code e Vibecode | [Acessar Unidade III](Unidade-III-Low-Code-No-Code/README.md) | Documentação completa e PDF de apoio; execução do protótipo não comprovada |
+| IV | Agentes de IA, chatbots e ética | [Acessar Unidade IV](Unidade-IV-Agentes-e-Etica/README.md) | Documentação completa e PDF de apoio; duas execuções relatadas e cenários pendentes |
 
 Cada unidade registra, no próprio `README.md`, a relação entre as semanas do plano de aulas e os documentos entregues.
+
+As quatro unidades têm material de estudo em PDF na pasta `docs`, com conceitos, tabelas, atividades de consolidação e referências oficiais.
 
 ## Objetivo da disciplina
 

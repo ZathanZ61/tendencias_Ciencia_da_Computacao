@@ -86,6 +86,7 @@ A documentação dos testes deve refletir somente execuções comprovadas. Em 27
 - [05 — Projeto de solução inteligente](docs/05-projeto-solucao-inteligente.md)
 - [06 — Validação, limitações e próximos passos](docs/06-validacao-e-limitacoes.md)
 - [07 — Reflexão sobre os aprendizados (A1)](docs/07-reflexao-aprendizados-a1.md)
+- [PDF — Agentes de IA, Chatbots e Ética](docs/Unidade_IV_Agentes_de_IA_Chatbots_e_Etica.pdf) — material de estudo com agentes, chatbot, privacidade, viés e validação por evidência.
 
 ## 9. Estado da implementação e das evidências
 
