@@ -2,7 +2,7 @@
 
 ## Visão geral
 
-Na Unidade III, a proposta foi construir um mini projeto para organizar a triagem inicial de chamados de suporte de TI. O fluxo conceitual recebe uma solicitação, organiza os dados e utiliza automação e IA como apoio à classificação.
+A proposta desta etapa foi organizar a triagem inicial de chamados de suporte de TI. O fluxo conceitual recebe uma solicitação, organiza os dados e utiliza automação e IA como apoio à classificação.
 
 ## Fluxo conceitual inicial
 
@@ -49,24 +49,16 @@ A divisão mostra o que cada abordagem resolve melhor: a interface exige control
 - **Vibecode:** permite utilizar instruções em linguagem natural para apoiar a criação e o ajuste de componentes.
 - **Código tradicional:** pode ser utilizado para personalizar a interface e comportamentos que exigem maior controle.
 
-## Evolução na Unidade IV
+## Fluxo desta etapa
 
-Na etapa seguinte, o grupo manteve a temática e ampliou a arquitetura. A versão evoluída passou a documentar dois fluxos principais:
+O fluxo cobre a abertura e a classificação inicial:
 
-### Abertura de chamados
 - formulário web;
 - validação e geração de protocolo;
 - classificação assistida por IA;
-- registro em Google Sheets;
-- confirmação por Gmail e alerta para prioridade alta.
+- registro em planilha.
 
-### Acompanhamento
-- chatbot com Gemini;
-- consulta por protocolo e e-mail;
-- recuperação das informações do chamado;
-- registro de informações adicionais enviadas pelo solicitante.
-
-Essas funcionalidades pertencem à versão ampliada da Unidade IV. A separação permite demonstrar a evolução do projeto sem confundir as entregas das duas etapas.
+O acompanhamento por chatbot não faz parte desta entrega. A proposta desta etapa termina no registro e na classificação inicial do chamado.
 
 ## Limites e cuidados
 

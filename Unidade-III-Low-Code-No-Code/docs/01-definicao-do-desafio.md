@@ -2,7 +2,7 @@
 
 ## Contexto
 
-A Unidade III propõe escolher um problema delimitado e desenvolver um mini projeto com apoio de ferramentas Low Code, No Code ou Vibecode e recursos de Inteligência Artificial.
+A Unidade III propõe escolher um problema delimitado e desenvolver uma atividade com apoio de ferramentas Low Code, No Code ou Vibecode e recursos de Inteligência Artificial.
 
 O grupo escolheu trabalhar com a **triagem de chamados de suporte de TI**, tema que foi mantido e ampliado na Unidade IV.
 
@@ -16,7 +16,7 @@ Como utilizar automação visual e Inteligência Artificial para organizar as in
 
 ## Objetivo geral
 
-Desenvolver um mini projeto que demonstre como ferramentas Low Code e recursos de IA podem apoiar o recebimento, a organização e a classificação inicial de solicitações de suporte de TI.
+Desenvolver uma atividade que demonstre como ferramentas Low Code e recursos de IA podem apoiar o recebimento, a organização e a classificação inicial de solicitações de suporte de TI.
 
 ## Objetivos específicos
 
@@ -30,7 +30,7 @@ Desenvolver um mini projeto que demonstre como ferramentas Low Code e recursos d
 
 Esta etapa corresponde à proposta e ao protótipo inicial de triagem. Não se deve atribuir a ela, retroativamente, todos os recursos desenvolvidos na etapa seguinte.
 
-O chatbot de acompanhamento, a consulta por protocolo e e-mail, o registro de informações adicionais pelo chat e o conjunto ampliado de notificações e integrações são apresentados como parte da evolução da Unidade IV.
+O chatbot de acompanhamento, a consulta por protocolo e e-mail, o registro de informações adicionais pelo chat e o conjunto ampliado de notificações e integrações não fazem parte desta etapa.
 
 ## Continuidade do projeto
 
