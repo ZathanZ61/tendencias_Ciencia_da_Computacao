@@ -6,16 +6,16 @@ Este repositório é um trabalho acadêmico da disciplina Tendências em Ciênci
 
 Nathan Ferreira dos Santos definiu o tema de cada unidade, escolheu as atividades, executou os testes, conferiu os resultados e revisou o texto final. A responsabilidade pelo conteúdo entregue é dele.
 
-As ferramentas de IA atuaram como apoio: organizar informação, sugerir estrutura, revisar redação e gerar material de estudo a partir dos documentos já produzidos.
+As ferramentas de IA atuaram como apoio: pesquisar o conteúdo, articulá-lo com as atividades realizadas e com o plano de ensino, revisar a redação e gerar o material de estudo a partir dos documentos já produzidos.
 
 ## Ferramentas utilizadas
 
 | Ferramenta | Uso |
 |---|---|
 | NotebookLM | Leitura do material da Unidade I e apoio à produção do PDF e da videoaula daquela unidade |
-| ChatGPT | Apoio à redação, à explicação de conceitos e à revisão de trechos |
+| ChatGPT | Pesquisa do conteúdo e junção desse conteúdo com as atividades realizadas e com o plano de ensino da disciplina |
 | Claude | Apoio à revisão de texto e à organização das ideias |
-| OpenHands (agente de IA) | Revisão do repositório, correção de links, padronização dos READMEs e geração dos PDFs das Unidades II, III e IV |
+| OpenHands (agente de IA) | Revisão: conferência do conteúdo contra as atividades e o plano de ensino, correção de links, padronização dos READMEs e geração dos PDFs das Unidades II, III e IV |
 
 ## O que foi verificado manualmente
 
