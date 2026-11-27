@@ -8,12 +8,14 @@ Repositório acadêmico com atividades, estudos, experimentos e projetos desenvo
 
 ## Unidades da disciplina
 
-| Unidade | Tema | Conteúdo |
-|---|---|---|
-| I | Fundamentos de IA e Engenharia de Prompt | [Acessar Unidade I](Unidade-I-Fundamentos-de-IA/README.md) |
-| II | Programação assistida e colaboração humano-máquina | [Acessar Unidade II](Unidade-II-Programacao-Assistida/README.md) |
-| III | Low Code, No Code e Vibecode | [Acessar Unidade III](Unidade-III-Low-Code-No-Code/README.md) |
-| IV | Agentes de IA, chatbots e ética | [Acessar Unidade IV](Unidade-IV-Agentes-e-Etica/README.md) |
+| Unidade | Tema | Conteúdo | Situação |
+|---|---|---|---|
+| I | Fundamentos de IA e Engenharia de Prompt | [Acessar Unidade I](Unidade-I-Fundamentos-de-IA/README.md) | Concluída: três atividades, PDF de apoio e videoaula |
+| II | Programação assistida e colaboração humano-máquina | [Acessar Unidade II](Unidade-II-Programacao-Assistida/README.md) | Concluída: três atividades, com testes executados e registrados |
+| III | Low Code, No Code e Vibecode | [Acessar Unidade III](Unidade-III-Low-Code-No-Code/README.md) | Documentação completa; execução do protótipo não comprovada |
+| IV | Agentes de IA, chatbots e ética | [Acessar Unidade IV](Unidade-IV-Agentes-e-Etica/README.md) | Documentação completa; duas execuções relatadas e cenários pendentes |
+
+Cada unidade registra, no próprio `README.md`, a relação entre as semanas do plano de aulas e os documentos entregues.
 
 ## Objetivo da disciplina
 
@@ -27,6 +29,7 @@ A disciplina aborda conceitos e aplicações atuais de Inteligência Artificial,
 - Os nomes dos arquivos devem ser objetivos, em minúsculas e separados por hífen.
 - Projetos colaborativos externos são referenciados, sem duplicar seu código neste repositório.
 - Resultados de testes devem distinguir o que foi executado, o que foi confirmado por terceiros e o que ainda está pendente.
+- Cada unidade deve indicar a qual semana do plano de aulas cada documento corresponde.
 
 ## Estrutura e convenções
 
