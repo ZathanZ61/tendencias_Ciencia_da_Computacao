@@ -1,4 +1,4 @@
-# 03 — Viés algorítmico e responsabilidade social
+# 04 — Viés algorítmico e responsabilidade social
 
 ## 1. Introdução
 

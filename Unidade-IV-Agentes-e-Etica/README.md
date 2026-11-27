@@ -12,6 +12,8 @@ A Unidade IV aborda a aplicação de agentes de Inteligência Artificial, chatbo
 
 Para esta etapa, o grupo manteve o tema de triagem de chamados de suporte de TI iniciado como mini projeto na etapa anterior e trabalhou em uma versão ampliada: um sistema que recebe solicitações, utiliza IA como apoio à classificação inicial, registra informações e oferece um chatbot para consulta do andamento.
 
+A documentação desta pasta cobre as quatro semanas da unidade e a reflexão da A1: agentes e chatbot, privacidade e segurança, viés e responsabilidade social, projeto aplicado, validação e aprendizados.
+
 O desenvolvimento é colaborativo com Douglas. Esta pasta registra a participação acadêmica e a análise do projeto, mas **não substitui nem replica o repositório original da aplicação**.
 
 ## 2. Identificação e acesso ao projeto
@@ -50,11 +52,12 @@ A presença de uma tecnologia na arquitetura não significa, por si só, que tod
 
 | Data | Atividade prevista | Registro nesta pasta |
 |---|---|---|
-| 05/11 | Criação de agentes de IA | [01 — Agentes de IA](docs/01-agentes-de-ia.md) |
-| 12/11 | Chatbot e ferramentas de chatbot | [02 — Especificação do chatbot](docs/02-chatbot-especificacao.md) |
-| 19/11 | Viés algorítmico e responsabilidade social | [03 — Ética e responsabilidade](docs/03-vies-algoritmico-e-etica.md) |
-| 26/11 | Projeto e apresentação da solução inteligente | [04 — Projeto aplicado](docs/04-projeto-solucao-inteligente.md) |
-| 26/11 | Integração dos conceitos e repositório | [05 — Validação e limitações](docs/05-validacao-e-limitacoes.md) |
+| 05/11 | Criação de agentes de IA e ferramentas de chatbot | [01 — Agentes de IA](docs/01-agentes-de-ia.md) e [02 — Especificação do chatbot](docs/02-chatbot-especificacao.md) |
+| 12/11 | Privacidade e segurança: estudo de caso com dados sensíveis | [03 — Privacidade e segurança](docs/03-privacidade-e-seguranca.md) |
+| 19/11 | Viés algorítmico e responsabilidade social | [04 — Ética e responsabilidade](docs/04-vies-algoritmico-e-etica.md) |
+| 26/11 | Projeto e apresentação da solução inteligente | [05 — Projeto aplicado](docs/05-projeto-solucao-inteligente.md) |
+| 26/11 | Validação, limitações e integração dos conceitos | [06 — Validação e limitações](docs/06-validacao-e-limitacoes.md) |
+| 26/11 | Avaliação A1: reflexão sobre aprendizados | [07 — Reflexão sobre aprendizados](docs/07-reflexao-aprendizados-a1.md) |
 
 ## 6. Como a solução funciona — visão geral
 
@@ -78,9 +81,11 @@ A documentação dos testes deve refletir somente execuções comprovadas. Em 26
 
 - [01 — Agentes de IA](docs/01-agentes-de-ia.md)
 - [02 — Especificação do chatbot](docs/02-chatbot-especificacao.md)
-- [03 — Viés algorítmico e responsabilidade social](docs/03-vies-algoritmico-e-etica.md)
-- [04 — Projeto de solução inteligente](docs/04-projeto-solucao-inteligente.md)
-- [05 — Validação, limitações e próximos passos](docs/05-validacao-e-limitacoes.md)
+- [03 — Privacidade e segurança](docs/03-privacidade-e-seguranca.md)
+- [04 — Viés algorítmico e responsabilidade social](docs/04-vies-algoritmico-e-etica.md)
+- [05 — Projeto de solução inteligente](docs/05-projeto-solucao-inteligente.md)
+- [06 — Validação, limitações e próximos passos](docs/06-validacao-e-limitacoes.md)
+- [07 — Reflexão sobre os aprendizados (A1)](docs/07-reflexao-aprendizados-a1.md)
 
 ## 9. Estado da implementação e das evidências
 
